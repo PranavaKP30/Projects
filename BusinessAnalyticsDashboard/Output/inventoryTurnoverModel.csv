@@ -1,0 +1,101 @@
+ProductID,ProductName,TotalUnitsSold,AvgInventory,TurnoverRatio,TurnoverClass,Month,Quarter,PredictedTurnoverClass,Category_Cleaning Supplies,Category_Dairy,Category_Fruits,Category_Personal Care,Category_Snacks,Category_Staples,Category_Vegetables
+P0001,Atque Beverage (Local),181.73,41.79747252747259,4.347870553190811,fast,12,4,fast,False,False,False,False,False,False,False
+P0002,Repellat Cleaning Supplie (Premium),154.08,41.782307692307725,3.6876852550766768,slow,12,4,slow,True,False,False,False,False,False,False
+P0003,Amul Milk 1L (Local),164.07,48.46813186813191,3.385110869269484,slow,12,4,slow,False,True,False,False,False,False,False
+P0004,Facere Beverage (Local),155.82,46.15560439560442,3.3759713915660337,slow,12,4,slow,False,False,False,False,False,False,False
+P0005,Atque Snack (Local),185.77,41.57241758241761,4.468587847500322,fast,12,4,fast,False,False,False,False,True,False,False
+P0006,Potatoes (Premium),138.79999999999998,43.46978021978016,3.1930228148897215,slow,12,4,slow,False,False,False,False,False,False,True
+P0007,Molestiae Personal Car (Premium),176.96,42.01637362637369,4.211691412819172,medium,12,4,medium,False,False,False,True,False,False,False
+P0008,Nobis Beverage (BrandX),165.07,50.36428571428573,3.2775209190185777,slow,12,4,slow,False,False,False,False,False,False,False
+P0009,Consectetur Snack (Local),187.93,49.340329670329766,3.808851729521571,slow,12,4,slow,False,False,False,False,True,False,False
+P0010,Tempora Cleaning Supplie (Premium),169.49,42.42912087912088,3.994662073788218,medium,12,4,medium,True,False,False,False,False,False,False
+P0011,Repudiandae Beverage (Local),165.12,42.416043956043964,3.8928665806531835,medium,12,4,medium,False,False,False,False,False,False,False
+P0012,Quaerat Beverage (Premium),165.85999999999999,45.694945054945066,3.6297231521028115,slow,12,4,slow,False,False,False,False,False,False,False
+P0013,Adipisci Beverage (Local),153.34,40.002087912087944,3.8332999101695213,slow,12,4,slow,False,False,False,False,False,False,False
+P0014,Apples (Premium),176.22,40.93483516483518,4.304890914801599,fast,12,4,fast,False,False,True,False,False,False,False
+P0015,Mangoes (BrandX),189.07,44.9672527472528,4.204615324460774,medium,12,4,medium,False,False,True,False,False,False,False
+P0016,Wheat Flour 10kg (Premium),181.16,48.73406593406594,3.717317579146748,slow,12,4,slow,False,False,False,False,False,True,False
+P0017,Repellendus Personal Car (Local),197.0,44.0063736263737,4.476624265216319,fast,12,4,fast,False,False,False,True,False,False,False
+P0018,Bananas (Premium),169.35,42.72109890109885,3.9640834237914246,medium,12,4,medium,False,False,True,False,False,False,False
+P0019,Quae Snack (Premium),184.69,39.361098901098906,4.692196233241947,fast,12,4,fast,False,False,False,False,True,False,False
+P0020,Turmeric Powder 200g (Premium),177.79,43.04032967032971,4.130776909977094,medium,12,4,medium,False,False,False,False,False,True,False
+P0021,Bananas (BrandX),189.67,44.77549450549458,4.236022451448857,medium,12,4,medium,False,False,True,False,False,False,False
+P0022,Ladyfinger (Local),160.35999999999999,48.165274725274756,3.3293695699788253,slow,12,4,slow,False,False,False,False,False,False,True
+P0023,Turmeric Powder 200g (Premium),168.68,53.14758241758241,3.1738038181055037,slow,12,4,slow,False,False,False,False,False,True,False
+P0024,Quam Cleaning Supplie (Premium),135.6,41.107692307692275,3.298652694610781,slow,12,4,slow,True,False,False,False,False,False,False
+P0025,Toor Dal 1kg (Premium),215.35,39.11670329670331,5.505320792668879,fast,12,4,fast,False,False,False,False,False,True,False
+P0026,Laudantium Personal Car (Premium),128.38,48.95219780219788,2.6225584501588184,slow,12,4,slow,False,False,False,True,False,False,False
+P0027,Oranges (Local),194.12,47.75593406593398,4.064835162306515,medium,12,4,medium,False,False,True,False,False,False,False
+P0028,Dicta Beverage (BrandX),174.51,37.98494505494502,4.5941885593772005,fast,12,4,fast,False,False,False,False,False,False,False
+P0029,Turmeric Powder 200g (Premium),209.14,46.825934065934106,4.466328417613979,fast,12,4,fast,False,False,False,False,False,True,False
+P0030,Voluptatibus Beverage (Local),176.0,46.973516483516484,3.7467920900016143,slow,12,4,slow,False,False,False,False,False,False,False
+P0031,Asperiores Personal Car (Premium),169.39000000000001,43.9301098901099,3.855897479512912,slow,12,4,slow,False,False,False,True,False,False,False
+P0032,Fresh Tomatoes (BrandX),170.39,41.784945054945055,4.07778446940509,medium,12,4,medium,False,False,False,False,False,False,True
+P0033,Toor Dal 1kg (BrandX),192.6,49.38934065934068,3.899626871483145,medium,12,4,medium,False,False,False,False,False,True,False
+P0034,Sunflower Oil 1L (Premium),192.26,42.12153846153848,4.56441067971803,fast,12,4,fast,False,False,False,False,False,True,False
+P0035,Basmati Rice 5kg (Local),172.33,42.161538461538434,4.087374566684915,medium,12,4,medium,False,False,False,False,False,True,False
+P0036,Necessitatibus Cleaning Supplie (Premium),176.62,47.77527472527472,3.6968913526008906,slow,12,4,slow,True,False,False,False,False,False,False
+P0037,Dignissimos Personal Car (BrandX),172.94,43.24142857142855,3.999405332188049,medium,12,4,medium,False,False,False,True,False,False,False
+P0038,Doloremque Personal Car (Local),213.34,47.637252747252745,4.478427862578691,fast,12,4,fast,False,False,False,True,False,False,False
+P0039,Turmeric Powder 200g (Local),187.16,42.67065934065939,4.386152051361947,fast,12,4,fast,False,False,False,False,False,True,False
+P0040,Non Snack (Local),142.55,38.11681318681325,3.7398194676284233,slow,12,4,slow,False,False,False,False,True,False,False
+P0041,Mangoes (Premium),176.21,44.90494505494518,3.924066709900022,medium,12,4,medium,False,False,True,False,False,False,False
+P0042,Accusantium Beverage (BrandX),189.64,45.79879120879127,4.140720639011053,medium,12,4,medium,False,False,False,False,False,False,False
+P0043,Adipisci Personal Car (BrandX),186.01,39.593956043956084,4.697939245916649,fast,12,4,fast,False,False,False,True,False,False,False
+P0044,Expedita Snack (BrandX),138.22,47.210659340659284,2.9277286513336334,slow,12,4,slow,False,False,False,False,True,False,False
+P0045,Animi Beverage (Local),214.4,42.994175824175706,4.98672194291587,fast,12,4,fast,False,False,False,False,False,False,False
+P0046,Oranges (Premium),180.67,40.26241758241759,4.487311265652804,fast,12,4,fast,False,False,True,False,False,False,False
+P0047,Sunflower Oil 1L (Premium),167.37,48.49516483516486,3.45127190656823,slow,12,4,slow,False,False,False,False,False,True,False
+P0048,Alias Snack (BrandX),193.47,41.1262637362638,4.704293131043763,fast,12,4,fast,False,False,False,False,True,False,False
+P0049,Apples (Local),199.15,44.05571428571428,4.520412464736212,fast,12,4,fast,False,False,True,False,False,False,False
+P0050,Tempore Beverage (Local),159.01,41.71692307692307,3.8116425726508343,slow,12,4,slow,False,False,False,False,False,False,False
+P0051,Fresh Tomatoes (Premium),166.96,48.42747252747262,3.447629853184772,slow,12,4,slow,False,False,False,False,False,False,True
+P0052,Nisi Snack (BrandX),157.08,42.82978021978012,3.667541584242256,slow,12,4,slow,False,False,False,False,True,False,False
+P0053,Vitae Cleaning Supplie (Local),176.21,42.27615384615378,4.168070743645269,medium,12,4,medium,True,False,False,False,False,False,False
+P0054,Illo Beverage (Local),213.74,45.908351648351655,4.65579774323425,fast,12,4,fast,False,False,False,False,False,False,False
+P0055,Coriander Leaves (BrandX),196.37,44.93208791208793,4.370373359551165,fast,12,4,fast,False,False,False,False,False,False,True
+P0056,Sapiente Cleaning Supplie (Premium),187.21,41.67615384615381,4.492017202237033,fast,12,4,fast,True,False,False,False,False,False,False
+P0057,Mangoes (Local),188.67,45.797032967032955,4.119699198326107,medium,12,4,medium,False,False,True,False,False,False,False
+P0058,Oranges (BrandX),174.68,40.10571428571421,4.355489064614955,fast,12,4,fast,False,False,True,False,False,False,False
+P0059,Mangoes (BrandX),141.27,38.373626373626266,3.6814347079037906,slow,12,4,slow,False,False,True,False,False,False,False
+P0060,Amul Milk 1L (BrandX),174.64,43.35582417582424,4.028063203037471,medium,12,4,medium,False,True,False,False,False,False,False
+P0061,Sunt Snack (BrandX),214.09,41.345494505494486,5.178073271600347,fast,12,4,fast,False,False,False,False,True,False,False
+P0062,Mangoes (Local),157.85999999999999,44.59593406593403,3.539784585890896,slow,12,4,slow,False,False,True,False,False,False,False
+P0063,Basmati Rice 5kg (Local),186.74,44.64263736263741,4.182996593213994,medium,12,4,medium,False,False,False,False,False,True,False
+P0064,Vel Personal Car (Local),186.82,46.810109890109935,3.9910181889889436,medium,12,4,medium,False,False,False,True,False,False,False
+P0065,Onions (Local),192.7,50.819999999999936,3.7918142463597055,slow,12,4,slow,False,False,False,False,False,False,True
+P0066,Mangoes (Premium),165.72,43.132307692307634,3.842131545156233,slow,12,4,slow,False,False,True,False,False,False,False
+P0067,Paneer 200g (Local),222.07,39.61428571428571,5.6058059862964305,fast,12,4,fast,False,True,False,False,False,False,False
+P0068,Reprehenderit Cleaning Supplie (Local),184.94,41.96593406593407,4.406907748304485,fast,12,4,fast,True,False,False,False,False,False,False
+P0069,Accusantium Snack (BrandX),141.34,35.65384615384615,3.964228694714132,medium,12,4,slow,False,False,False,False,True,False,False
+P0070,Amet Cleaning Supplie (Premium),175.43,42.78967032967029,4.099821257055985,medium,12,4,medium,True,False,False,False,False,False,False
+P0071,Fresh Tomatoes (Premium),181.47,43.568021978021946,4.165210899212804,medium,12,4,medium,False,False,False,False,False,False,True
+P0072,Ladyfinger (Local),192.76999999999998,49.116263736263754,3.9247692176893563,medium,12,4,medium,False,False,False,False,False,False,True
+P0073,Consectetur Snack (Premium),192.0,44.30109890109888,4.33397827057598,fast,12,4,fast,False,False,False,False,True,False,False
+P0074,Nemo Personal Car (Premium),142.55,42.072967032967185,3.388161331438828,slow,12,4,slow,False,False,False,True,False,False,False
+P0075,Repellat Personal Car (Premium),151.17,44.76560439560435,3.376923020274105,slow,12,4,slow,False,False,False,True,False,False,False
+P0076,Pomegranates (Local),160.88,46.37450549450549,3.4691475043127147,slow,12,4,slow,False,False,True,False,False,False,False
+P0077,Onions (Premium),199.91,42.99670329670329,4.649426227413296,fast,12,4,fast,False,False,False,False,False,False,True
+P0078,Consectetur Snack (BrandX),163.85,39.24164835164835,4.175410740438926,medium,12,4,medium,False,False,False,False,True,False,False
+P0079,Blanditiis Snack (BrandX),167.04,39.39307692307694,4.240338989670186,medium,12,4,medium,False,False,False,False,True,False,False
+P0080,Butter 100g (Local),186.11,41.52230769230769,4.482168991644899,fast,12,4,fast,False,True,False,False,False,False,False
+P0081,Mangoes (BrandX),195.26,46.920549450549466,4.161502844415506,medium,12,4,medium,False,False,True,False,False,False,False
+P0082,Maiores Snack (Local),201.94,44.61890109890111,4.525884659337193,fast,12,4,fast,False,False,False,False,True,False,False
+P0083,Apples (BrandX),174.47,42.90824175824183,4.066118602179446,medium,12,4,medium,False,False,True,False,False,False,False
+P0084,Apples (BrandX),202.78,43.08549450549444,4.7064563683756875,fast,12,4,fast,False,False,True,False,False,False,False
+P0085,Molestiae Beverage (Premium),200.23,43.67637362637364,4.5844007497704125,fast,12,4,fast,False,False,False,False,False,False,False
+P0086,Labore Personal Car (Local),168.94,44.72351648351646,3.7774310538006426,slow,12,4,slow,False,False,False,True,False,False,False
+P0087,Curd 500g (BrandX),184.39,43.30032967032971,4.25839713932589,medium,12,4,medium,False,True,False,False,False,False,False
+P0088,Dicta Beverage (BrandX),197.13,44.35648351648346,4.444220649879603,fast,12,4,fast,False,False,False,False,False,False,False
+P0089,Odio Personal Car (BrandX),222.24,42.98615384615391,5.170036863390709,fast,12,4,fast,False,False,False,True,False,False,False
+P0090,Omnis Personal Car (Local),189.52,47.95769230769244,3.9518165049322214,medium,12,4,medium,False,False,False,True,False,False,False
+P0091,Sit Personal Car (Premium),188.1,44.76461538461538,4.201979585524281,medium,12,4,medium,False,False,False,True,False,False,False
+P0092,Dicta Beverage (Local),173.53,40.434285714285686,4.291654889768234,medium,12,4,medium,False,False,False,False,False,False,False
+P0093,Wheat Flour 10kg (Premium),200.31,44.17582417582424,4.534380597014919,fast,12,4,fast,False,False,False,False,False,True,False
+P0094,Oranges (Local),168.19,39.10934065934071,4.300507172059169,medium,12,4,medium,False,False,True,False,False,False,False
+P0095,Fresh Tomatoes (BrandX),133.01,34.51527472527481,3.8536561293136566,slow,12,4,slow,False,False,False,False,False,False,True
+P0096,Impedit Personal Car (BrandX),175.52,44.088131868131896,3.9811167441837254,medium,12,4,medium,False,False,False,True,False,False,False
+P0097,Iste Cleaning Supplie (BrandX),166.32,43.548241758241794,3.8192127462533625,slow,12,4,slow,True,False,False,False,False,False,False
+P0098,Est Snack (BrandX),167.09,49.21054945054953,3.3954101684620417,slow,12,4,slow,False,False,False,False,True,False,False
+P0099,Toor Dal 1kg (BrandX),211.78,43.78890109890104,4.8363853553135865,fast,12,4,fast,False,False,False,False,False,True,False
+P0100,Potatoes (BrandX),163.37,37.53120879120875,4.3529106911757,fast,12,4,fast,False,False,False,False,False,False,True

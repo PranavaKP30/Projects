@@ -1,0 +1,101 @@
+product_id,product_name,category,subcategory,unit_of_measure,base_price_per_unit,cost_price_per_unit,supplier_id,supplier_name,hsn_code,shelf_life_days
+P0001,Atque Beverage (Local),Beverages,Coffee,liter,330.57,249.33,S006,Dar-Dube,36463485,409
+P0002,Repellat Cleaning Supplie (Premium),Cleaning Supplies,Dishwash,pack,186.84,151.1,S008,Srivastava-Misra,53707891,932
+P0003,Amul Milk 1L (Local),Dairy,Curd,liter,77.79,60.26,S006,Dar-Dube,24105978,14
+P0004,Facere Beverage (Local),Beverages,Juices,liter,19.71,17.89,S008,Srivastava-Misra,24729811,285
+P0005,Atque Snack (Local),Snacks,Biscuits,pack,418.44,338.09,S006,Dar-Dube,20926762,190
+P0006,Potatoes (Premium),Vegetables,Root Vegetables,kg,274.54,228.44,S006,Dar-Dube,36503221,12
+P0007,Molestiae Personal Car (Premium),Personal Care,Shampoo,pack,181.47,142.48,S004,Gandhi LLC,96983381,1131
+P0008,Nobis Beverage (BrandX),Beverages,Juices,liter,113.84,87.71,S005,"Chandran, Tripathi and Ratti",57337787,289
+P0009,Consectetur Snack (Local),Snacks,Chips,pack,141.72,114.09,S003,"Kapadia, Gokhale and Krish",11368083,191
+P0010,Tempora Cleaning Supplie (Premium),Cleaning Supplies,Floor Cleaner,pack,333.14,299.44,S004,Gandhi LLC,91382041,1004
+P0011,Repudiandae Beverage (Local),Beverages,Juices,liter,266.04,228.5,S008,Srivastava-Misra,45571662,474
+P0012,Quaerat Beverage (Premium),Beverages,Tea,liter,191.6,164.63,S004,Gandhi LLC,70153472,316
+P0013,Adipisci Beverage (Local),Beverages,Soft Drinks,liter,24.62,20.87,S009,"Ramanathan, Ratta and Srivastava",66326978,317
+P0014,Apples (Premium),Fruits,Common Fruits,kg,220.55,178.22,S008,Srivastava-Misra,73378688,7
+P0015,Mangoes (BrandX),Fruits,Common Fruits,kg,176.93,143.99,S009,"Ramanathan, Ratta and Srivastava",20516593,5
+P0016,Wheat Flour 10kg (Premium),Staples,Oil,kg,220.6,177.04,S001,Arora PLC,19906248,733
+P0017,Repellendus Personal Car (Local),Personal Care,Toothpaste,pack,189.81,154.6,S010,Pillai Ltd,94366447,1129
+P0018,Bananas (Premium),Fruits,Common Fruits,kg,75.61,58.51,S005,"Chandran, Tripathi and Ratti",52704012,9
+P0019,Quae Snack (Premium),Snacks,Chocolates,pack,261.81,216.3,S010,Pillai Ltd,91324356,177
+P0020,Turmeric Powder 200g (Premium),Staples,Pulses,kg,101.04,83.85,S007,Kari and Sons,46468581,563
+P0021,Bananas (BrandX),Fruits,Common Fruits,kg,10.0,8.86,S009,"Ramanathan, Ratta and Srivastava",36152069,14
+P0022,Ladyfinger (Local),Vegetables,Fruiting Vegetables,kg,172.88,137.79,S002,"Master, Gokhale and Merchant",67181116,10
+P0023,Turmeric Powder 200g (Premium),Staples,Rice,kg,245.08,216.95,S008,Srivastava-Misra,48397547,768
+P0024,Quam Cleaning Supplie (Premium),Cleaning Supplies,Floor Cleaner,pack,222.18,173.93,S009,"Ramanathan, Ratta and Srivastava",71444097,1079
+P0025,Toor Dal 1kg (Premium),Staples,Spices,kg,174.62,156.94,S007,Kari and Sons,26755751,620
+P0026,Laudantium Personal Car (Premium),Personal Care,Shampoo,pack,56.82,49.34,S007,Kari and Sons,78711914,911
+P0027,Oranges (Local),Fruits,Common Fruits,kg,140.49,116.83,S010,Pillai Ltd,45257230,9
+P0028,Dicta Beverage (BrandX),Beverages,Juices,liter,43.47,33.04,S007,Kari and Sons,93542098,495
+P0029,Turmeric Powder 200g (Premium),Staples,Spices,kg,201.09,180.85,S001,Arora PLC,28872234,839
+P0030,Voluptatibus Beverage (Local),Beverages,Tea,liter,10.0,7.69,S006,Dar-Dube,34737637,313
+P0031,Asperiores Personal Car (Premium),Personal Care,Shampoo,pack,215.2,169.21,S009,"Ramanathan, Ratta and Srivastava",41123548,1012
+P0032,Fresh Tomatoes (BrandX),Vegetables,Leafy Greens,kg,10.0,7.66,S006,Dar-Dube,38612196,5
+P0033,Toor Dal 1kg (BrandX),Staples,Rice,kg,145.23,109.53,S009,"Ramanathan, Ratta and Srivastava",37169662,777
+P0034,Sunflower Oil 1L (Premium),Staples,Oil,kg,190.47,155.33,S002,"Master, Gokhale and Merchant",72719412,647
+P0035,Basmati Rice 5kg (Local),Staples,Rice,kg,96.3,74.73,S010,Pillai Ltd,12516232,778
+P0036,Necessitatibus Cleaning Supplie (Premium),Cleaning Supplies,Detergent,pack,127.37,110.61,S005,"Chandran, Tripathi and Ratti",11918640,1091
+P0037,Dignissimos Personal Car (BrandX),Personal Care,Soap,pack,195.79,173.91,S002,"Master, Gokhale and Merchant",67774165,1065
+P0038,Doloremque Personal Car (Local),Personal Care,Shampoo,pack,19.02,14.68,S008,Srivastava-Misra,71753990,951
+P0039,Turmeric Powder 200g (Local),Staples,Spices,kg,86.17,66.45,S010,Pillai Ltd,95943681,771
+P0040,Non Snack (Local),Snacks,Namkeen,pack,135.24,117.81,S006,Dar-Dube,91513322,224
+P0041,Mangoes (Premium),Fruits,Common Fruits,kg,78.92,60.78,S001,Arora PLC,32255857,10
+P0042,Accusantium Beverage (BrandX),Beverages,Tea,liter,118.82,89.83,S008,Srivastava-Misra,90528084,332
+P0043,Adipisci Personal Car (BrandX),Personal Care,Toothpaste,pack,10.0,8.04,S005,"Chandran, Tripathi and Ratti",82705497,1102
+P0044,Expedita Snack (BrandX),Snacks,Chips,pack,236.7,201.99,S009,"Ramanathan, Ratta and Srivastava",16226889,229
+P0045,Animi Beverage (Local),Beverages,Soft Drinks,liter,153.32,125.19,S002,"Master, Gokhale and Merchant",81536834,385
+P0046,Oranges (Premium),Fruits,Common Fruits,kg,324.05,275.87,S005,"Chandran, Tripathi and Ratti",35531362,13
+P0047,Sunflower Oil 1L (Premium),Staples,Spices,kg,92.52,73.56,S003,"Kapadia, Gokhale and Krish",24718635,750
+P0048,Alias Snack (BrandX),Snacks,Namkeen,pack,100.39,81.51,S006,Dar-Dube,75104270,159
+P0049,Apples (Local),Fruits,Common Fruits,kg,55.94,42.46,S010,Pillai Ltd,63373419,9
+P0050,Tempore Beverage (Local),Beverages,Soft Drinks,liter,15.34,12.5,S006,Dar-Dube,67387993,384
+P0051,Fresh Tomatoes (Premium),Vegetables,Leafy Greens,kg,312.54,262.56,S005,"Chandran, Tripathi and Ratti",75818056,7
+P0052,Nisi Snack (BrandX),Snacks,Biscuits,pack,99.95,88.2,S009,"Ramanathan, Ratta and Srivastava",21955881,205
+P0053,Vitae Cleaning Supplie (Local),Cleaning Supplies,Dishwash,pack,156.58,134.18,S009,"Ramanathan, Ratta and Srivastava",86742532,1136
+P0054,Illo Beverage (Local),Beverages,Coffee,liter,227.08,188.72,S008,Srivastava-Misra,16529089,314
+P0055,Coriander Leaves (BrandX),Vegetables,Root Vegetables,kg,139.87,107.75,S009,"Ramanathan, Ratta and Srivastava",42706955,8
+P0056,Sapiente Cleaning Supplie (Premium),Cleaning Supplies,Floor Cleaner,pack,120.02,107.45,S010,Pillai Ltd,55347924,1131
+P0057,Mangoes (Local),Fruits,Common Fruits,kg,166.21,149.23,S004,Gandhi LLC,81043783,14
+P0058,Oranges (BrandX),Fruits,Exotic Fruits,kg,152.41,117.98,S001,Arora PLC,42704925,8
+P0059,Mangoes (BrandX),Fruits,Common Fruits,kg,117.28,88.97,S008,Srivastava-Misra,28099213,6
+P0060,Amul Milk 1L (BrandX),Dairy,Curd,liter,249.89,219.71,S007,Kari and Sons,68812072,4
+P0061,Sunt Snack (BrandX),Snacks,Biscuits,pack,124.25,92.93,S006,Dar-Dube,76951591,208
+P0062,Mangoes (Local),Fruits,Common Fruits,kg,307.7,270.8,S001,Arora PLC,56935960,11
+P0063,Basmati Rice 5kg (Local),Staples,Pulses,kg,10.0,8.74,S007,Kari and Sons,89107560,399
+P0064,Vel Personal Car (Local),Personal Care,Shampoo,pack,230.77,209.65,S008,Srivastava-Misra,19944480,826
+P0065,Onions (Local),Vegetables,Fruiting Vegetables,kg,44.78,38.72,S007,Kari and Sons,52805224,9
+P0066,Mangoes (Premium),Fruits,Exotic Fruits,kg,297.91,263.47,S001,Arora PLC,68658624,13
+P0067,Paneer 200g (Local),Dairy,Paneer,pack,215.63,177.03,S004,Gandhi LLC,56596552,10
+P0068,Reprehenderit Cleaning Supplie (Local),Cleaning Supplies,Detergent,pack,286.22,235.63,S006,Dar-Dube,58207742,1107
+P0069,Accusantium Snack (BrandX),Snacks,Namkeen,pack,189.52,168.71,S002,"Master, Gokhale and Merchant",91189053,176
+P0070,Amet Cleaning Supplie (Premium),Cleaning Supplies,Detergent,pack,62.09,47.59,S006,Dar-Dube,45291017,1046
+P0071,Fresh Tomatoes (Premium),Vegetables,Root Vegetables,kg,20.11,16.76,S007,Kari and Sons,64874479,3
+P0072,Ladyfinger (Local),Vegetables,Leafy Greens,kg,180.58,135.45,S006,Dar-Dube,62767384,5
+P0073,Consectetur Snack (Premium),Snacks,Namkeen,pack,69.96,61.04,S008,Srivastava-Misra,29299064,195
+P0074,Nemo Personal Car (Premium),Personal Care,Toothpaste,pack,43.0,35.87,S004,Gandhi LLC,28126527,1103
+P0075,Repellat Personal Car (Premium),Personal Care,Toothpaste,pack,131.88,103.32,S001,Arora PLC,86415641,989
+P0076,Pomegranates (Local),Fruits,Exotic Fruits,kg,122.66,106.58,S001,Arora PLC,38845751,13
+P0077,Onions (Premium),Vegetables,Fruiting Vegetables,kg,195.04,146.81,S005,"Chandran, Tripathi and Ratti",34317328,3
+P0078,Consectetur Snack (BrandX),Snacks,Biscuits,pack,10.0,8.29,S005,"Chandran, Tripathi and Ratti",60731853,142
+P0079,Blanditiis Snack (BrandX),Snacks,Chips,pack,141.16,123.24,S009,"Ramanathan, Ratta and Srivastava",68542748,186
+P0080,Butter 100g (Local),Dairy,Curd,pack,282.2,241.76,S004,Gandhi LLC,63888713,19
+P0081,Mangoes (BrandX),Fruits,Exotic Fruits,kg,124.45,100.4,S001,Arora PLC,48827955,8
+P0082,Maiores Snack (Local),Snacks,Biscuits,pack,161.85,136.75,S009,"Ramanathan, Ratta and Srivastava",12283239,150
+P0083,Apples (BrandX),Fruits,Common Fruits,kg,186.81,156.2,S010,Pillai Ltd,22413922,10
+P0084,Apples (BrandX),Fruits,Common Fruits,kg,277.3,220.17,S010,Pillai Ltd,16559045,17
+P0085,Molestiae Beverage (Premium),Beverages,Soft Drinks,liter,159.97,124.1,S006,Dar-Dube,12553990,435
+P0086,Labore Personal Car (Local),Personal Care,Soap,pack,155.31,134.17,S003,"Kapadia, Gokhale and Krish",76447444,1081
+P0087,Curd 500g (BrandX),Dairy,Curd,pack,250.43,227.65,S004,Gandhi LLC,39525029,19
+P0088,Dicta Beverage (BrandX),Beverages,Coffee,liter,10.0,8.31,S010,Pillai Ltd,87465790,401
+P0089,Odio Personal Car (BrandX),Personal Care,Shampoo,pack,190.49,146.78,S009,"Ramanathan, Ratta and Srivastava",82983999,1167
+P0090,Omnis Personal Car (Local),Personal Care,Soap,pack,256.29,216.02,S001,Arora PLC,20022543,1111
+P0091,Sit Personal Car (Premium),Personal Care,Shampoo,pack,300.89,265.58,S008,Srivastava-Misra,73424789,1189
+P0092,Dicta Beverage (Local),Beverages,Coffee,liter,289.91,248.98,S007,Kari and Sons,74209718,261
+P0093,Wheat Flour 10kg (Premium),Staples,Spices,kg,146.71,114.46,S006,Dar-Dube,66435837,657
+P0094,Oranges (Local),Fruits,Common Fruits,kg,146.44,122.61,S006,Dar-Dube,44577847,14
+P0095,Fresh Tomatoes (BrandX),Vegetables,Root Vegetables,kg,295.07,249.24,S006,Dar-Dube,87392965,7
+P0096,Impedit Personal Car (BrandX),Personal Care,Soap,pack,144.54,123.37,S008,Srivastava-Misra,54102293,1123
+P0097,Iste Cleaning Supplie (BrandX),Cleaning Supplies,Floor Cleaner,pack,140.96,105.07,S001,Arora PLC,92134773,1126
+P0098,Est Snack (BrandX),Snacks,Biscuits,pack,235.56,205.29,S002,"Master, Gokhale and Merchant",80697655,196
+P0099,Toor Dal 1kg (BrandX),Staples,Flour,kg,241.85,194.43,S010,Pillai Ltd,41397220,739
+P0100,Potatoes (BrandX),Vegetables,Root Vegetables,kg,159.2,137.83,S009,"Ramanathan, Ratta and Srivastava",85153591,10
