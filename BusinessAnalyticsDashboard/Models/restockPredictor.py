@@ -166,9 +166,11 @@ os.makedirs(model_plot_dir, exist_ok=True)
 results = []
 restock_predictions = []
 
+
 for pid, group in sales.groupby('ProductID'):
     group = group.sort_values('OrderDate')
-    if len(group) < 60:
+    # Lower threshold to 1 to allow prediction for all products
+    if len(group) < 1:
         continue
     # Get ProductName for this ProductID
     product_name = ''
@@ -201,45 +203,55 @@ for pid, group in sales.groupby('ProductID'):
     train_X, valid_X = X.iloc[:-30], X.iloc[-30:]
     train_y_alert, valid_y_alert = y_alert.iloc[:-30], y_alert.iloc[-30:]
     train_y_qty, valid_y_qty = y_qty.iloc[:-30], y_qty.iloc[-30:]
-    # Classification model for restock alert
-    clf = RandomForestClassifier(n_estimators=100, random_state=42)
-    clf.fit(train_X, train_y_alert)
-    alert_pred = clf.predict(valid_X)
-    acc = accuracy_score(valid_y_alert, alert_pred)
-    prec = precision_score(valid_y_alert, alert_pred, zero_division=0)
-    rec = recall_score(valid_y_alert, alert_pred, zero_division=0)
-    f1 = f1_score(valid_y_alert, alert_pred, zero_division=0)
-    # Regression model for restock quantity
-    reg = XGBRegressor(n_estimators=100, max_depth=3, learning_rate=0.1, random_state=42)
-    reg.fit(train_X, train_y_qty)
-    qty_pred = reg.predict(valid_X)
-    mae = mean_absolute_error(valid_y_qty, qty_pred)
-    rmse = np.sqrt(mean_squared_error(valid_y_qty, qty_pred))
-    results.append({'ProductID': pid, 'ProductName': product_name, 'Category': product_category, 'Alert_Accuracy': acc, 'Alert_Precision': prec, 'Alert_Recall': rec, 'Alert_F1': f1, 'Qty_MAE': mae, 'Qty_RMSE': rmse})
-    # Predict for next day
-    last_feat = df_feat.iloc[[-1]][feature_cols]
-    # Ensure last_feat matches the columns used for training (numeric only)
-    last_feat = last_feat.select_dtypes(include=[np.number])
-    next_alert = clf.predict(last_feat)[0]
-    next_qty = reg.predict(last_feat)[0]
-    restock_predictions.append({'ProductID': pid, 'ProductName': product_name, 'Category': product_category, 'NextDayAlert': int(next_alert), 'NextDayRestockQty': max(0, int(round(next_qty)))})
-    # Save models
-    joblib.dump(clf, os.path.join(model_plot_dir, f'restock_alert_model_{pid}.joblib'))
-    joblib.dump(reg, os.path.join(model_plot_dir, f'restock_qty_model_{pid}.joblib'))
-    # Visualization (optional)
-    if visualize:
-        plt.figure(figsize=(12,6))
-        plt.plot(df_feat['OrderDate'], df_feat['stock_on_hand'], label='Stock On Hand', marker='o')
-        plt.plot(df_feat['OrderDate'], df_feat['future_demand'], label='Future Demand', marker='x')
-        plt.plot(df_feat['OrderDate'], df_feat['restock_qty'], label='Restock Qty', marker='s')
-        plt.title(f'Product {pid} Restock Prediction')
-        plt.xlabel('Date')
-        plt.ylabel('Units')
-        plt.legend()
-        plt.tight_layout()
-        plot_path = os.path.join(model_plot_dir, f'product_{pid}_restock.png')
-        plt.savefig(plot_path)
-        plt.close()
+    # Robust check: only fit if enough samples
+    if train_X.shape[0] >= 2 and train_y_alert.shape[0] >= 2 and train_y_qty.shape[0] >= 2:
+        # Classification model for restock alert
+        clf = RandomForestClassifier(n_estimators=100, random_state=42)
+        clf.fit(train_X, train_y_alert)
+        alert_pred = clf.predict(valid_X)
+        acc = accuracy_score(valid_y_alert, alert_pred)
+        prec = precision_score(valid_y_alert, alert_pred, zero_division=0)
+        rec = recall_score(valid_y_alert, alert_pred, zero_division=0)
+        f1 = f1_score(valid_y_alert, alert_pred, zero_division=0)
+        # Regression model for restock quantity
+        reg = XGBRegressor(n_estimators=100, max_depth=3, learning_rate=0.1, random_state=42)
+        reg.fit(train_X, train_y_qty)
+        qty_pred = reg.predict(valid_X)
+        mae = mean_absolute_error(valid_y_qty, qty_pred)
+        rmse = np.sqrt(mean_squared_error(valid_y_qty, qty_pred))
+        results.append({'ProductID': pid, 'ProductName': product_name, 'Category': product_category, 'Alert_Accuracy': acc, 'Alert_Precision': prec, 'Alert_Recall': rec, 'Alert_F1': f1, 'Qty_MAE': mae, 'Qty_RMSE': rmse})
+        # Predict for next day
+        last_feat = df_feat.iloc[[-1]][feature_cols]
+        # Ensure last_feat matches the columns used for training (numeric only)
+        last_feat = last_feat.select_dtypes(include=[np.number])
+        next_qty = reg.predict(last_feat)[0]
+        # If predicted restock quantity > 0, force alert to 1
+        if next_qty > 0:
+            next_alert = 1
+        else:
+            next_alert = clf.predict(last_feat)[0]
+        restock_predictions.append({'ProductID': pid, 'ProductName': product_name, 'Category': product_category, 'NextDayAlert': int(next_alert), 'NextDayRestockQty': max(0, int(round(next_qty)))})
+        # Save models
+        joblib.dump(clf, os.path.join(model_plot_dir, f'restock_alert_model_{pid}.joblib'))
+        joblib.dump(reg, os.path.join(model_plot_dir, f'restock_qty_model_{pid}.joblib'))
+        # Visualization (optional)
+        if visualize:
+            plt.figure(figsize=(12,6))
+            plt.plot(df_feat['OrderDate'], df_feat['stock_on_hand'], label='Stock On Hand', marker='o')
+            plt.plot(df_feat['OrderDate'], df_feat['future_demand'], label='Future Demand', marker='x')
+            plt.plot(df_feat['OrderDate'], df_feat['restock_qty'], label='Restock Qty', marker='s')
+            plt.title(f'Product {pid} Restock Prediction')
+            plt.xlabel('Date')
+            plt.ylabel('Units')
+            plt.legend()
+            plt.tight_layout()
+            plot_path = os.path.join(model_plot_dir, f'product_{pid}_restock.png')
+            plt.savefig(plot_path)
+            plt.close()
+    else:
+        # Not enough samples for model training
+        results.append({'ProductID': pid, 'ProductName': product_name, 'Category': product_category, 'Alert_Accuracy': np.nan, 'Alert_Precision': np.nan, 'Alert_Recall': np.nan, 'Alert_F1': np.nan, 'Qty_MAE': np.nan, 'Qty_RMSE': np.nan})
+        restock_predictions.append({'ProductID': pid, 'ProductName': product_name, 'Category': product_category, 'NextDayAlert': np.nan, 'NextDayRestockQty': np.nan})
 
 # Save all output into a single CSV file
 
@@ -247,7 +259,18 @@ for pid, group in sales.groupby('ProductID'):
 results_df = pd.DataFrame(results)
 pred_df = pd.DataFrame(restock_predictions)
 merge_cols = ['ProductID', 'ProductName', 'Category']
-combined_df = pd.merge(results_df, pred_df, on=merge_cols, how='outer')
+# Only merge if all merge columns exist in both DataFrames
+missing_cols = [col for col in merge_cols if col not in results_df.columns or col not in pred_df.columns]
+if missing_cols:
+    print(f"Warning: Missing columns for merge: {missing_cols}. Merging on intersection only.")
+    merge_cols = [col for col in merge_cols if col in results_df.columns and col in pred_df.columns]
+    if merge_cols:
+        combined_df = pd.merge(results_df, pred_df, on=merge_cols, how='outer')
+    else:
+        print("Warning: No common columns to merge on. Concatenating results.")
+        combined_df = pd.concat([results_df, pred_df], axis=1)
+else:
+    combined_df = pd.merge(results_df, pred_df, on=merge_cols, how='outer')
 script_base = os.path.splitext(os.path.basename(__file__))[0]
 combined_path = os.path.join(csv_output_dir, f'{script_base}.csv')
 combined_df.to_csv(combined_path, index=False)

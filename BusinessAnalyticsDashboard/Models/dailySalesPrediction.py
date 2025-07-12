@@ -29,10 +29,10 @@ import joblib
 import matplotlib.pyplot as plt
 import seaborn as sns
 
-# Paths (adjust as needed)
-BASE_DIR = os.path.dirname(os.path.abspath(__file__))
-# Use the correct data directory (ThataRetail/Data)
-DATA_DIR = os.path.abspath(os.path.join(BASE_DIR, '../Data'))
+
+# Always use canonical Data folder for training/prediction files
+PROJECT_ROOT = os.path.abspath(os.path.join(os.path.dirname(os.path.abspath(__file__)), '..'))
+DATA_DIR = os.path.join(PROJECT_ROOT, 'Data')
 sales_path = os.path.join(DATA_DIR, 'sales.csv')
 products_path = os.path.join(DATA_DIR, 'products.csv')
 inventory_path = os.path.join(DATA_DIR, 'inventory.csv')
@@ -156,14 +156,11 @@ visualize = args.visualize
 
 
 
-# Always output the CSV to /Users/pranav/Coding/Projects/ThataRetail/Output
-PROJECT_ROOT = os.path.abspath(os.path.join(BASE_DIR, '..'))
-OUTPUT_ROOT = os.path.join(PROJECT_ROOT, 'Output')
-os.makedirs(OUTPUT_ROOT, exist_ok=True)
-csv_output_dir = OUTPUT_ROOT
+## Output files are saved to canonical Data folder
+## Remove undefined BASE_DIR usage
 
 # Other files (models, plots) go in dataSalesOutput as before
-model_plot_dir = os.path.join(BASE_DIR, 'dataSalesOutput')
+model_plot_dir = os.path.join(os.path.dirname(os.path.abspath(__file__)), 'dataSalesOutput')
 os.makedirs(model_plot_dir, exist_ok=True)
 
 future_day_predictions = []
@@ -172,8 +169,8 @@ future_day_predictions = []
 
 for pid, group in sales.groupby('ProductID'):
     group = group.sort_values('OrderDate')
-    # Only use products with enough data
-    if len(group) < 60:
+    # Only use products with enough data (lower threshold to 1 for prediction)
+    if len(group) < 1:
         continue
     df_feat = create_features(group, inventory, products)
     # Target: next day's sales
@@ -303,22 +300,23 @@ if not future_pred_df.empty:
 else:
     combined_df = results_df.copy()
 
-# Add ProductName from products DataFrame
-if 'ProductName' in products.columns:
-    combined_df = combined_df.merge(products[['ProductID', 'ProductName']], on='ProductID', how='left')
-    # Move ProductName to be right after ProductID for readability
-    cols = list(combined_df.columns)
-    if 'ProductName' in cols:
-        cols.insert(1, cols.pop(cols.index('ProductName')))
-        combined_df = combined_df[cols]
 
-# Always output to /Users/pranav/Coding/Projects/ThataRetail/Output
-PROJECT_ROOT = os.path.abspath(os.path.join(BASE_DIR, '..'))
-OUTPUT_ROOT = os.path.join(PROJECT_ROOT, 'Output')
-os.makedirs(OUTPUT_ROOT, exist_ok=True)
-csv_output_dir = OUTPUT_ROOT
-# Output CSV name matches this script's filename
+# Add ProductName from products DataFrame, robust to missing ProductID column
+if 'ProductName' in products.columns:
+    # Ensure 'ProductID' exists in both DataFrames
+    if 'ProductID' in combined_df.columns and 'ProductID' in products.columns:
+        combined_df = combined_df.merge(products[['ProductID', 'ProductName']], on='ProductID', how='left')
+        # Move ProductName to be right after ProductID for readability
+        cols = list(combined_df.columns)
+        if 'ProductName' in cols:
+            cols.insert(1, cols.pop(cols.index('ProductName')))
+            combined_df = combined_df[cols]
+    else:
+        print('Warning: ProductID column missing in combined_df or products, skipping ProductName merge.')
+
 script_base = os.path.splitext(os.path.basename(__file__))[0]
-output_path = os.path.join(csv_output_dir, f'{script_base}.csv')
+output_dir = os.path.join(os.path.dirname(os.path.abspath(__file__)), '..', 'Output')
+os.makedirs(output_dir, exist_ok=True)
+output_path = os.path.join(output_dir, f'{script_base}.csv')
 combined_df.to_csv(output_path, index=False)
 print(f'Saved combined model metrics and next {predict_days} day(s) predictions to {output_path}')

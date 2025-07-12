@@ -147,10 +147,19 @@ os.makedirs(model_plot_dir, exist_ok=True)
 results = []
 
 
+
 for pid, group in data.groupby('ProductID'):
     group = group.sort_values('OrderDate')
-    if group['Quantity'].sum() < 10 or group['Price'].nunique() < 3:
-        continue  # Not enough data or price variation
+    # Remove strict data filter, allow prediction for all products
+    # If not enough data, fill output with NaN
+    if group['Quantity'].sum() < 1 or group['Price'].nunique() < 1:
+        product_name = group['ProductName'].iloc[0] if 'ProductName' in group.columns else ''
+        product_category = ''
+        prod_row = products[products['ProductID'] == pid]
+        if not prod_row.empty and 'Category' in prod_row.columns:
+            product_category = prod_row.iloc[0]['Category']
+        results.append({'ProductID': pid, 'ProductName': product_name, 'Category': product_category, 'OptimalPrice': np.nan, 'ExpectedRevenue': np.nan, 'MAE': np.nan, 'RMSE': np.nan})
+        continue
     # Features for model
     feature_cols = ['Price', 'Promotion', 'month', 'lag_1', 'lag_7', 'roll_7', 'roll_30', 'stock_on_hand', 'ShelfLife', 'MinOrderQty']
     # Add category/supplier if present and numeric/categorical
@@ -163,60 +172,70 @@ for pid, group in data.groupby('ProductID'):
     # Chronological split
     train_X, valid_X = X.iloc[:-30], X.iloc[-30:]
     train_y, valid_y = y.iloc[:-30], y.iloc[-30:]
-    # Model selection
-    if model_type == 'xgboost':
-        model = XGBRegressor(n_estimators=100, max_depth=3, learning_rate=0.1, random_state=42)
-    elif model_type == 'randomforest':
-        model = RandomForestRegressor(n_estimators=100, random_state=42)
+    # Robust check: only fit if enough samples
+    if train_X.shape[0] >= 2 and train_y.shape[0] >= 2:
+        # Model selection
+        if model_type == 'xgboost':
+            model = XGBRegressor(n_estimators=100, max_depth=3, learning_rate=0.1, random_state=42)
+        elif model_type == 'randomforest':
+            model = RandomForestRegressor(n_estimators=100, random_state=42)
+        else:
+            model = LinearRegression()
+        model.fit(train_X, train_y)
+        pred = model.predict(valid_X)
+        mae = mean_absolute_error(valid_y, pred)
+        rmse = np.sqrt(mean_squared_error(valid_y, pred))
+        # Price grid for optimization
+        price_min, price_max = group['Price'].min(), group['Price'].max()
+        price_grid = np.linspace(price_min, price_max, 30)
+        # Use median values for other features
+        median_vals = {col: group[col].median() for col in feature_cols if col != 'Price'}
+        opt_revenue = -np.inf
+        opt_price = price_min
+        pred_curve = []
+        for p in price_grid:
+            feat = median_vals.copy()
+            feat['Price'] = p
+            feat_df = pd.DataFrame([feat])
+            # Ensure column order matches training
+            feat_df = feat_df.reindex(columns=feature_cols)
+            rev_pred = model.predict(feat_df)[0]
+            pred_curve.append((p, rev_pred))
+            if rev_pred > opt_revenue:
+                opt_revenue = rev_pred
+                opt_price = p
+        # Get ProductName for this product
+        product_name = group['ProductName'].iloc[0] if 'ProductName' in group.columns else ''
+        # Get Category from products.csv
+        product_category = ''
+        prod_row = products[products['ProductID'] == pid]
+        if not prod_row.empty and 'Category' in prod_row.columns:
+            product_category = prod_row.iloc[0]['Category']
+        results.append({'ProductID': pid, 'ProductName': product_name, 'Category': product_category, 'OptimalPrice': round(opt_price,2), 'ExpectedRevenue': round(opt_revenue,2), 'MAE': mae, 'RMSE': rmse})
+        # Save model
+        joblib.dump(model, os.path.join(model_plot_dir, f'price_opt_model_{pid}.joblib'))
+        # Visualization (optional)
+        if visualize:
+            curve = np.array(pred_curve)
+            plt.figure(figsize=(10,6))
+            plt.plot(curve[:,0], curve[:,1], label='Predicted Revenue')
+            plt.axvline(opt_price, color='r', linestyle='--', label=f'Optimal Price: {opt_price:.2f}')
+            plt.title(f'Product {pid} Price Optimization')
+            plt.xlabel('Price')
+            plt.ylabel('Predicted Revenue')
+            plt.legend()
+            plt.tight_layout()
+            plot_path = os.path.join(model_plot_dir, f'product_{pid}_price_opt.png')
+            plt.savefig(plot_path)
+            plt.close()
     else:
-        model = LinearRegression()
-    model.fit(train_X, train_y)
-    pred = model.predict(valid_X)
-    mae = mean_absolute_error(valid_y, pred)
-    rmse = np.sqrt(mean_squared_error(valid_y, pred))
-    # Price grid for optimization
-    price_min, price_max = group['Price'].min(), group['Price'].max()
-    price_grid = np.linspace(price_min, price_max, 30)
-    # Use median values for other features
-    median_vals = {col: group[col].median() for col in feature_cols if col != 'Price'}
-    opt_revenue = -np.inf
-    opt_price = price_min
-    pred_curve = []
-    for p in price_grid:
-        feat = median_vals.copy()
-        feat['Price'] = p
-        feat_df = pd.DataFrame([feat])
-        # Ensure column order matches training
-        feat_df = feat_df.reindex(columns=feature_cols)
-        rev_pred = model.predict(feat_df)[0]
-        pred_curve.append((p, rev_pred))
-        if rev_pred > opt_revenue:
-            opt_revenue = rev_pred
-            opt_price = p
-    # Get ProductName for this product
-    product_name = group['ProductName'].iloc[0] if 'ProductName' in group.columns else ''
-    # Get Category from products.csv
-    product_category = ''
-    prod_row = products[products['ProductID'] == pid]
-    if not prod_row.empty and 'Category' in prod_row.columns:
-        product_category = prod_row.iloc[0]['Category']
-    results.append({'ProductID': pid, 'ProductName': product_name, 'Category': product_category, 'OptimalPrice': round(opt_price,2), 'ExpectedRevenue': round(opt_revenue,2), 'MAE': mae, 'RMSE': rmse})
-    # Save model
-    joblib.dump(model, os.path.join(model_plot_dir, f'price_opt_model_{pid}.joblib'))
-    # Visualization (optional)
-    if visualize:
-        curve = np.array(pred_curve)
-        plt.figure(figsize=(10,6))
-        plt.plot(curve[:,0], curve[:,1], label='Predicted Revenue')
-        plt.axvline(opt_price, color='r', linestyle='--', label=f'Optimal Price: {opt_price:.2f}')
-        plt.title(f'Product {pid} Price Optimization')
-        plt.xlabel('Price')
-        plt.ylabel('Predicted Revenue')
-        plt.legend()
-        plt.tight_layout()
-        plot_path = os.path.join(model_plot_dir, f'product_{pid}_price_opt.png')
-        plt.savefig(plot_path)
-        plt.close()
+        # Not enough samples for model training
+        product_name = group['ProductName'].iloc[0] if 'ProductName' in group.columns else ''
+        product_category = ''
+        prod_row = products[products['ProductID'] == pid]
+        if not prod_row.empty and 'Category' in prod_row.columns:
+            product_category = prod_row.iloc[0]['Category']
+        results.append({'ProductID': pid, 'ProductName': product_name, 'Category': product_category, 'OptimalPrice': np.nan, 'ExpectedRevenue': np.nan, 'MAE': np.nan, 'RMSE': np.nan})
 
 # Save all output into a single CSV file
 results_df = pd.DataFrame(results)

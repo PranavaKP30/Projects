@@ -140,7 +140,8 @@ future_predictions = []
 
 for pid, group in sales.groupby('ProductID'):
     group = group.sort_values('OrderDate')
-    if len(group) < 60:
+    # Lower threshold to 1 to allow prediction for all products
+    if len(group) < 1:
         continue
     df_feat = create_features(group, inventory, products)
     feature_cols = ['dayofweek','month','is_weekend','lag_1','lag_2','lag_7','roll_7','roll_30','stock_on_hand','promotion_flag']
@@ -157,19 +158,25 @@ for pid, group in sales.groupby('ProductID'):
         # Chronological split
         train_X, valid_X = X.iloc[:-30], X.iloc[-30:]
         train_y, valid_y = y[:-30], y[-30:]
-        model = MultiOutputRegressor(XGBRegressor(n_estimators=100, max_depth=3, learning_rate=0.1, random_state=42))
-        model.fit(train_X, train_y)
-        y_pred = model.predict(valid_X)
-        mae = mean_absolute_error(valid_y, y_pred)
-        rmse = np.sqrt(mean_squared_error(valid_y, y_pred))
-        results.append({'ProductID': pid, 'MAE': mae, 'RMSE': rmse})
-        # Predict next n days
-        last_feat = df_feat.iloc[[-1]][feature_cols]
-        next_pred = model.predict(last_feat)[0]
-        for i, val in enumerate(next_pred):
-            future_predictions.append({'ProductID': pid, 'Day': i+1, 'PredictedSales': max(0, val)})
-        # Save model
-        joblib.dump(model, os.path.join(model_plot_dir, f'model_{pid}_seq.joblib'))
+        # Robust check: only fit if enough samples
+        if train_X.shape[0] >= 2 and train_y.shape[0] >= 2:
+            model = MultiOutputRegressor(XGBRegressor(n_estimators=100, max_depth=3, learning_rate=0.1, random_state=42))
+            model.fit(train_X, train_y)
+            y_pred = model.predict(valid_X)
+            mae = mean_absolute_error(valid_y, y_pred)
+            rmse = np.sqrt(mean_squared_error(valid_y, y_pred))
+            results.append({'ProductID': pid, 'MAE': mae, 'RMSE': rmse})
+            # Predict next n days
+            last_feat = df_feat.iloc[[-1]][feature_cols]
+            next_pred = model.predict(last_feat)[0]
+            for i, val in enumerate(next_pred):
+                future_predictions.append({'ProductID': pid, 'Day': i+1, 'PredictedSales': max(0, val)})
+            # Save model
+            joblib.dump(model, os.path.join(model_plot_dir, f'model_{pid}_seq.joblib'))
+        else:
+            results.append({'ProductID': pid, 'MAE': np.nan, 'RMSE': np.nan})
+            for i in range(predict_days):
+                future_predictions.append({'ProductID': pid, 'Day': i+1, 'PredictedSales': np.nan})
     else:
         # Single-output: predict sum of next n days
         y = df_feat.groupby('ProductID')['Quantity'].shift(-1).rolling(predict_days).sum().reset_index(0,drop=True)
@@ -178,18 +185,23 @@ for pid, group in sales.groupby('ProductID'):
         y = y[mask]
         train_X, valid_X = X.iloc[:-30], X.iloc[-30:]
         train_y, valid_y = y.iloc[:-30], y.iloc[-30:]
-        model = XGBRegressor(n_estimators=100, max_depth=3, learning_rate=0.1, random_state=42)
-        model.fit(train_X, train_y)
-        y_pred = model.predict(valid_X)
-        mae = mean_absolute_error(valid_y, y_pred)
-        rmse = np.sqrt(mean_squared_error(valid_y, y_pred))
-        results.append({'ProductID': pid, 'MAE': mae, 'RMSE': rmse})
-        # Predict next n days (sum)
-        last_feat = df_feat.iloc[[-1]][feature_cols]
-        next_pred = model.predict(last_feat)[0]
-        future_predictions.append({'ProductID': pid, 'Days': predict_days, 'PredictedTotalSales': max(0, next_pred)})
-        # Save model
-        joblib.dump(model, os.path.join(model_plot_dir, f'model_{pid}_sum.joblib'))
+        # Robust check: only fit if enough samples
+        if train_X.shape[0] >= 2 and train_y.shape[0] >= 2:
+            model = XGBRegressor(n_estimators=100, max_depth=3, learning_rate=0.1, random_state=42)
+            model.fit(train_X, train_y)
+            y_pred = model.predict(valid_X)
+            mae = mean_absolute_error(valid_y, y_pred)
+            rmse = np.sqrt(mean_squared_error(valid_y, y_pred))
+            results.append({'ProductID': pid, 'MAE': mae, 'RMSE': rmse})
+            # Predict next n days (sum)
+            last_feat = df_feat.iloc[[-1]][feature_cols]
+            next_pred = model.predict(last_feat)[0]
+            future_predictions.append({'ProductID': pid, 'Days': predict_days, 'PredictedTotalSales': max(0, next_pred)})
+            # Save model
+            joblib.dump(model, os.path.join(model_plot_dir, f'model_{pid}_sum.joblib'))
+        else:
+            results.append({'ProductID': pid, 'MAE': np.nan, 'RMSE': np.nan})
+            future_predictions.append({'ProductID': pid, 'Days': predict_days, 'PredictedTotalSales': np.nan})
     # Visualization (optional)
     if visualize:
         plt.figure(figsize=(12,6))
@@ -234,17 +246,21 @@ if 'ProductName' in products.columns:
     merge_cols = ['ProductID', 'ProductName']
     if category_col:
         merge_cols.append(category_col)
-        combined_df = combined_df.merge(products[merge_cols], on='ProductID', how='left')
-        # Move ProductName and Category to be right after ProductID for readability
-        cols = list(combined_df.columns)
-        if 'ProductName' in cols:
-            cols.insert(1, cols.pop(cols.index('ProductName')))
-        if category_col and category_col in cols:
-            # Standardize output column name to 'Category'
-            combined_df = combined_df.rename(columns={category_col: 'Category'})
-            cols = [c if c != category_col else 'Category' for c in cols]
-            cols.insert(2, cols.pop(cols.index('Category')))
-        combined_df = combined_df[cols]
+        # Only merge if 'ProductID' exists in both DataFrames
+        if 'ProductID' in combined_df.columns and 'ProductID' in products.columns:
+            combined_df = combined_df.merge(products[merge_cols], on='ProductID', how='left')
+            # Move ProductName and Category to be right after ProductID for readability
+            cols = list(combined_df.columns)
+            if 'ProductName' in cols:
+                cols.insert(1, cols.pop(cols.index('ProductName')))
+            if category_col and category_col in cols:
+                # Standardize output column name to 'Category'
+                combined_df = combined_df.rename(columns={category_col: 'Category'})
+                cols = [c if c != category_col else 'Category' for c in cols]
+                cols.insert(2, cols.pop(cols.index('Category')))
+            combined_df = combined_df[cols]
+        else:
+            print('Warning: ProductID column missing in combined_df or products, skipping ProductName/Category merge.')
     else:
         # No category found, add blank 'Category' column after ProductName
         combined_df = combined_df.merge(products[['ProductID', 'ProductName']], on='ProductID', how='left')

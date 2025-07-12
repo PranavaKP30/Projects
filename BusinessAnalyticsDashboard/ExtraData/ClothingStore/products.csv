@@ -1,0 +1,201 @@
+product_id,product_name,category,subcategory,unit_of_measure,base_price_per_unit,cost_price_per_unit,supplier_id,supplier_name,hsn_code,shelf_life_days
+P0001,T-shirt 80,Clothing,T-shirt,pcs,1149.01,937.13,S002,Wholesaler B,6165,629
+P0002,Shampoo 83,Cosmetics,Shampoo,ml,230.2,179.05,S002,Wholesaler B,3393,453
+P0003,Eyeliner 46,Cosmetics,Eyeliner,ml,744.61,455.06,S001,Local Vendor A,3343,605
+P0004,Pants 48,Clothing,Pants,pcs,790.95,573.56,S001,Local Vendor A,6157,413
+P0005,Shirt 62,Clothing,Shirt,pcs,879.13,712.2,S002,Wholesaler B,6138,253
+P0006,Eyeliner 41,Cosmetics,Eyeliner,ml,160.48,134.03,S001,Local Vendor A,3305,225
+P0007,Pants 6,Clothing,Pants,pcs,1079.01,804.65,S001,Local Vendor A,6186,278
+P0008,Kurta 42,Clothing,Kurta,pcs,1277.41,911.52,S002,Wholesaler B,6158,675
+P0009,Kurta 18,Clothing,Kurta,pcs,1072.92,803.85,S002,Wholesaler B,6100,729
+P0010,Saree 74,Clothing,Saree,pcs,941.76,608.56,S002,Wholesaler B,6193,188
+P0011,Pants 65,Clothing,Pants,pcs,1114.22,817.21,S001,Local Vendor A,6200,671
+P0012,Lipstick 74,Cosmetics,Lipstick,ml,444.71,290.56,S002,Wholesaler B,3369,558
+P0013,Eyeliner 7,Cosmetics,Eyeliner,ml,245.07,148.16,S002,Wholesaler B,3348,600
+P0014,Foundation 44,Cosmetics,Foundation,ml,524.66,386.68,S001,Local Vendor A,3334,389
+P0015,Perfume 15,Cosmetics,Perfume,ml,459.88,354.56,S001,Local Vendor A,3398,354
+P0016,T-shirt 29,Clothing,T-shirt,pcs,978.25,782.4,S002,Wholesaler B,6187,438
+P0017,Shampoo 4,Cosmetics,Shampoo,ml,392.62,276.48,S001,Local Vendor A,3334,276
+P0018,Eyeliner 40,Cosmetics,Eyeliner,ml,502.78,354.06,S001,Local Vendor A,3381,229
+P0019,Kurta 68,Clothing,Kurta,pcs,972.48,597.22,S002,Wholesaler B,6103,402
+P0020,Perfume 62,Cosmetics,Perfume,ml,150.73,91.91,S002,Wholesaler B,3350,364
+P0021,Pants 90,Clothing,Pants,pcs,1262.57,992.27,S002,Wholesaler B,6156,213
+P0022,Lipstick 64,Cosmetics,Lipstick,ml,437.3,327.6,S001,Local Vendor A,3320,676
+P0023,Shampoo 22,Cosmetics,Shampoo,ml,708.74,511.89,S001,Local Vendor A,3314,672
+P0024,Foundation 2,Cosmetics,Foundation,ml,106.84,90.56,S003,Distributor C,3327,641
+P0025,Lipstick 84,Cosmetics,Lipstick,ml,681.72,469.45,S003,Distributor C,3349,612
+P0026,Foundation 40,Cosmetics,Foundation,ml,461.47,390.34,S003,Distributor C,3384,465
+P0027,Pants 5,Clothing,Pants,pcs,930.08,592.41,S001,Local Vendor A,6121,665
+P0028,Shampoo 44,Cosmetics,Shampoo,ml,535.9,365.22,S002,Wholesaler B,3380,436
+P0029,Foundation 54,Cosmetics,Foundation,ml,787.2,569.72,S001,Local Vendor A,3311,560
+P0030,Foundation 30,Cosmetics,Foundation,ml,657.15,473.29,S002,Wholesaler B,3355,573
+P0031,Foundation 6,Cosmetics,Foundation,ml,116.87,94.95,S003,Distributor C,3313,205
+P0032,T-shirt 29,Clothing,T-shirt,pcs,866.29,586.71,S003,Distributor C,6175,531
+P0033,Eyeliner 30,Cosmetics,Eyeliner,ml,783.12,485.4,S001,Local Vendor A,3370,184
+P0034,T-shirt 25,Clothing,T-shirt,pcs,1451.05,976.78,S002,Wholesaler B,6155,629
+P0035,T-shirt 11,Clothing,T-shirt,pcs,1434.51,1195.6,S002,Wholesaler B,6198,588
+P0036,Kurta 49,Clothing,Kurta,pcs,502.59,426.68,S002,Wholesaler B,6194,488
+P0037,Eyeliner 76,Cosmetics,Eyeliner,ml,263.4,168.49,S002,Wholesaler B,3318,227
+P0038,Foundation 41,Cosmetics,Foundation,ml,358.53,222.53,S002,Wholesaler B,3362,199
+P0039,Saree 53,Clothing,Saree,pcs,562.27,362.28,S002,Wholesaler B,6122,451
+P0040,Kurta 48,Clothing,Kurta,pcs,532.85,339.24,S003,Distributor C,6139,690
+P0041,Foundation 95,Cosmetics,Foundation,ml,232.31,190.42,S003,Distributor C,3399,325
+P0042,Saree 28,Clothing,Saree,pcs,325.9,231.34,S002,Wholesaler B,6196,602
+P0043,Kurta 90,Clothing,Kurta,pcs,1059.57,729.91,S002,Wholesaler B,6199,485
+P0044,Lipstick 97,Cosmetics,Lipstick,ml,715.77,607.06,S003,Distributor C,3331,442
+P0045,Shampoo 9,Cosmetics,Shampoo,ml,484.15,320.85,S002,Wholesaler B,3386,594
+P0046,Lipstick 62,Cosmetics,Lipstick,ml,732.96,620.73,S003,Distributor C,3347,266
+P0047,Shampoo 47,Cosmetics,Shampoo,ml,150.74,97.0,S002,Wholesaler B,3352,541
+P0048,Shirt 12,Clothing,Shirt,pcs,996.04,739.54,S001,Local Vendor A,6132,628
+P0049,Saree 42,Clothing,Saree,pcs,496.17,402.09,S001,Local Vendor A,6129,625
+P0050,Eyeliner 57,Cosmetics,Eyeliner,ml,357.82,278.51,S002,Wholesaler B,3321,645
+P0051,T-shirt 91,Clothing,T-shirt,pcs,646.98,540.44,S003,Distributor C,6141,207
+P0052,T-shirt 41,Clothing,T-shirt,pcs,672.89,415.6,S002,Wholesaler B,6169,280
+P0053,Saree 5,Clothing,Saree,pcs,1339.52,918.84,S003,Distributor C,6167,255
+P0054,Shirt 40,Clothing,Shirt,pcs,852.12,617.42,S003,Distributor C,6173,722
+P0055,Kurta 77,Clothing,Kurta,pcs,1413.64,1159.89,S001,Local Vendor A,6196,379
+P0056,Foundation 11,Cosmetics,Foundation,ml,140.16,114.8,S003,Distributor C,3383,401
+P0057,Saree 66,Clothing,Saree,pcs,1364.83,890.14,S002,Wholesaler B,6105,486
+P0058,Foundation 24,Cosmetics,Foundation,ml,536.72,332.59,S002,Wholesaler B,3380,217
+P0059,Perfume 42,Cosmetics,Perfume,ml,798.08,624.26,S002,Wholesaler B,3309,559
+P0060,Perfume 41,Cosmetics,Perfume,ml,127.31,105.29,S003,Distributor C,3332,206
+P0061,Pants 24,Clothing,Pants,pcs,683.29,422.59,S001,Local Vendor A,6157,491
+P0062,Shirt 39,Clothing,Shirt,pcs,1108.23,897.01,S002,Wholesaler B,6155,240
+P0063,Pants 52,Clothing,Pants,pcs,1420.29,1081.3,S002,Wholesaler B,6114,545
+P0064,Lipstick 11,Cosmetics,Lipstick,ml,225.29,185.8,S002,Wholesaler B,3353,375
+P0065,Shirt 74,Clothing,Shirt,pcs,480.17,346.8,S003,Distributor C,6129,244
+P0066,Shampoo 36,Cosmetics,Shampoo,ml,570.17,434.09,S002,Wholesaler B,3310,426
+P0067,Lipstick 73,Cosmetics,Lipstick,ml,268.9,206.3,S002,Wholesaler B,3392,511
+P0068,Foundation 59,Cosmetics,Foundation,ml,411.79,247.46,S002,Wholesaler B,3354,384
+P0069,Perfume 82,Cosmetics,Perfume,ml,354.09,257.97,S003,Distributor C,3339,348
+P0070,Lipstick 34,Cosmetics,Lipstick,ml,649.39,535.48,S003,Distributor C,3313,696
+P0071,Kurta 95,Clothing,Kurta,pcs,796.02,632.76,S002,Wholesaler B,6185,692
+P0072,Pants 68,Clothing,Pants,pcs,586.01,453.9,S003,Distributor C,6121,584
+P0073,Saree 73,Clothing,Saree,pcs,1241.41,934.29,S001,Local Vendor A,6106,487
+P0074,T-shirt 99,Clothing,T-shirt,pcs,1097.35,862.18,S003,Distributor C,6135,272
+P0075,Saree 93,Clothing,Saree,pcs,471.3,314.32,S003,Distributor C,6175,548
+P0076,Lipstick 74,Cosmetics,Lipstick,ml,405.44,285.36,S003,Distributor C,3345,432
+P0077,Foundation 30,Cosmetics,Foundation,ml,284.2,229.3,S003,Distributor C,3300,449
+P0078,Eyeliner 76,Cosmetics,Eyeliner,ml,485.21,388.81,S002,Wholesaler B,3311,478
+P0079,Saree 32,Clothing,Saree,pcs,1037.57,778.44,S003,Distributor C,6188,318
+P0080,Lipstick 39,Cosmetics,Lipstick,ml,674.58,510.81,S003,Distributor C,3301,553
+P0081,Eyeliner 66,Cosmetics,Eyeliner,ml,131.39,106.61,S002,Wholesaler B,3348,410
+P0082,Foundation 4,Cosmetics,Foundation,ml,337.07,257.68,S003,Distributor C,3396,465
+P0083,Kurta 4,Clothing,Kurta,pcs,481.18,387.19,S001,Local Vendor A,6145,191
+P0084,Shirt 58,Clothing,Shirt,pcs,1384.29,1013.31,S001,Local Vendor A,6167,524
+P0085,Shampoo 60,Cosmetics,Shampoo,ml,452.56,273.66,S002,Wholesaler B,3388,311
+P0086,Pants 44,Clothing,Pants,pcs,1376.4,1102.85,S001,Local Vendor A,6166,211
+P0087,Pants 10,Clothing,Pants,pcs,653.01,476.02,S003,Distributor C,6104,490
+P0088,Eyeliner 90,Cosmetics,Eyeliner,ml,460.55,329.14,S003,Distributor C,3306,694
+P0089,Perfume 43,Cosmetics,Perfume,ml,119.99,89.1,S003,Distributor C,3319,693
+P0090,T-shirt 26,Clothing,T-shirt,pcs,1274.68,912.63,S003,Distributor C,6200,326
+P0091,Pants 2,Clothing,Pants,pcs,544.45,332.16,S003,Distributor C,6194,525
+P0092,Shampoo 96,Cosmetics,Shampoo,ml,677.76,447.17,S001,Local Vendor A,3325,479
+P0093,Kurta 40,Clothing,Kurta,pcs,811.74,609.24,S001,Local Vendor A,6172,500
+P0094,Pants 37,Clothing,Pants,pcs,592.77,497.94,S001,Local Vendor A,6103,343
+P0095,Lipstick 22,Cosmetics,Lipstick,ml,343.14,222.46,S003,Distributor C,3307,371
+P0096,Lipstick 13,Cosmetics,Lipstick,ml,412.3,291.79,S002,Wholesaler B,3377,240
+P0097,Eyeliner 37,Cosmetics,Eyeliner,ml,219.52,131.87,S003,Distributor C,3318,404
+P0098,Perfume 83,Cosmetics,Perfume,ml,346.69,223.81,S003,Distributor C,3353,636
+P0099,Shampoo 53,Cosmetics,Shampoo,ml,568.97,435.66,S003,Distributor C,3357,681
+P0100,T-shirt 23,Clothing,T-shirt,pcs,1235.8,748.95,S002,Wholesaler B,6162,189
+P0101,Kurta 96,Clothing,Kurta,pcs,334.91,205.51,S001,Local Vendor A,6193,545
+P0102,Foundation 93,Cosmetics,Foundation,ml,156.11,115.46,S001,Local Vendor A,3361,218
+P0103,Shirt 64,Clothing,Shirt,pcs,1414.45,1196.54,S001,Local Vendor A,6150,486
+P0104,Pants 77,Clothing,Pants,pcs,381.15,241.28,S003,Distributor C,6163,394
+P0105,Foundation 19,Cosmetics,Foundation,ml,267.3,222.1,S001,Local Vendor A,3346,594
+P0106,T-shirt 45,Clothing,T-shirt,pcs,856.74,625.23,S001,Local Vendor A,6109,357
+P0107,Saree 16,Clothing,Saree,pcs,1335.61,1013.63,S003,Distributor C,6104,260
+P0108,Kurta 63,Clothing,Kurta,pcs,1052.83,753.77,S003,Distributor C,6117,727
+P0109,Eyeliner 29,Cosmetics,Eyeliner,ml,602.17,447.49,S002,Wholesaler B,3386,340
+P0110,Pants 28,Clothing,Pants,pcs,1464.57,892.81,S002,Wholesaler B,6156,537
+P0111,Pants 2,Clothing,Pants,pcs,533.87,348.47,S003,Distributor C,6169,449
+P0112,Eyeliner 9,Cosmetics,Eyeliner,ml,350.17,221.07,S002,Wholesaler B,3369,717
+P0113,Foundation 10,Cosmetics,Foundation,ml,518.09,354.65,S001,Local Vendor A,3345,555
+P0114,Perfume 30,Cosmetics,Perfume,ml,478.29,402.64,S001,Local Vendor A,3320,384
+P0115,Pants 74,Clothing,Pants,pcs,661.12,455.7,S001,Local Vendor A,6183,510
+P0116,Shirt 47,Clothing,Shirt,pcs,1268.61,1033.46,S003,Distributor C,6182,259
+P0117,Saree 31,Clothing,Saree,pcs,419.38,348.25,S003,Distributor C,6123,298
+P0118,Saree 17,Clothing,Saree,pcs,760.28,474.87,S003,Distributor C,6115,604
+P0119,Eyeliner 22,Cosmetics,Eyeliner,ml,365.06,263.69,S003,Distributor C,3348,303
+P0120,T-shirt 60,Clothing,T-shirt,pcs,1119.82,825.75,S001,Local Vendor A,6106,191
+P0121,Shampoo 23,Cosmetics,Shampoo,ml,464.78,305.73,S001,Local Vendor A,3349,689
+P0122,Eyeliner 18,Cosmetics,Eyeliner,ml,381.87,273.74,S003,Distributor C,3300,372
+P0123,Saree 72,Clothing,Saree,pcs,1285.32,828.73,S002,Wholesaler B,6135,326
+P0124,Lipstick 91,Cosmetics,Lipstick,ml,197.18,143.81,S003,Distributor C,3392,381
+P0125,Eyeliner 66,Cosmetics,Eyeliner,ml,395.34,302.54,S001,Local Vendor A,3300,262
+P0126,Kurta 74,Clothing,Kurta,pcs,1094.08,692.22,S003,Distributor C,6101,673
+P0127,Foundation 78,Cosmetics,Foundation,ml,201.09,136.78,S002,Wholesaler B,3390,640
+P0128,Perfume 32,Cosmetics,Perfume,ml,213.72,142.83,S001,Local Vendor A,3369,411
+P0129,Shampoo 61,Cosmetics,Shampoo,ml,265.88,224.82,S002,Wholesaler B,3378,515
+P0130,Perfume 27,Cosmetics,Perfume,ml,673.48,517.69,S001,Local Vendor A,3354,239
+P0131,T-shirt 18,Clothing,T-shirt,pcs,349.16,213.57,S001,Local Vendor A,6151,304
+P0132,T-shirt 22,Clothing,T-shirt,pcs,351.38,232.52,S002,Wholesaler B,6171,613
+P0133,Shampoo 59,Cosmetics,Shampoo,ml,433.44,344.48,S003,Distributor C,3330,410
+P0134,Lipstick 27,Cosmetics,Lipstick,ml,593.83,378.48,S001,Local Vendor A,3343,488
+P0135,Saree 81,Clothing,Saree,pcs,829.22,662.81,S003,Distributor C,6183,534
+P0136,Shirt 46,Clothing,Shirt,pcs,619.5,413.0,S002,Wholesaler B,6193,652
+P0137,Saree 32,Clothing,Saree,pcs,315.74,210.07,S002,Wholesaler B,6157,362
+P0138,Kurta 74,Clothing,Kurta,pcs,959.8,733.4,S001,Local Vendor A,6184,476
+P0139,Pants 32,Clothing,Pants,pcs,976.85,789.08,S001,Local Vendor A,6195,568
+P0140,Eyeliner 81,Cosmetics,Eyeliner,ml,626.42,448.13,S003,Distributor C,3338,634
+P0141,Shampoo 45,Cosmetics,Shampoo,ml,547.81,401.13,S002,Wholesaler B,3346,700
+P0142,Pants 54,Clothing,Pants,pcs,1483.36,973.09,S003,Distributor C,6101,433
+P0143,Shampoo 77,Cosmetics,Shampoo,ml,650.85,548.25,S001,Local Vendor A,3376,648
+P0144,Eyeliner 36,Cosmetics,Eyeliner,ml,427.05,308.41,S002,Wholesaler B,3305,436
+P0145,Perfume 78,Cosmetics,Perfume,ml,412.37,330.35,S003,Distributor C,3386,281
+P0146,Shampoo 40,Cosmetics,Shampoo,ml,320.96,242.62,S001,Local Vendor A,3330,433
+P0147,Saree 4,Clothing,Saree,pcs,1110.81,848.25,S002,Wholesaler B,6180,614
+P0148,Foundation 64,Cosmetics,Foundation,ml,123.46,88.84,S003,Distributor C,3335,554
+P0149,Pants 74,Clothing,Pants,pcs,1218.18,787.7,S003,Distributor C,6168,690
+P0150,Foundation 52,Cosmetics,Foundation,ml,244.58,171.24,S001,Local Vendor A,3316,630
+P0151,Pants 78,Clothing,Pants,pcs,1282.3,975.94,S003,Distributor C,6194,377
+P0152,T-shirt 72,Clothing,T-shirt,pcs,775.2,578.52,S003,Distributor C,6103,237
+P0153,Lipstick 88,Cosmetics,Lipstick,ml,442.87,321.81,S001,Local Vendor A,3373,251
+P0154,Eyeliner 3,Cosmetics,Eyeliner,ml,293.95,232.41,S002,Wholesaler B,3342,433
+P0155,Saree 89,Clothing,Saree,pcs,904.76,683.41,S003,Distributor C,6188,409
+P0156,Foundation 98,Cosmetics,Foundation,ml,202.7,136.03,S001,Local Vendor A,3390,251
+P0157,Shirt 23,Clothing,Shirt,pcs,1022.49,653.11,S002,Wholesaler B,6113,457
+P0158,Kurta 84,Clothing,Kurta,pcs,1270.41,765.17,S002,Wholesaler B,6168,326
+P0159,Shampoo 40,Cosmetics,Shampoo,ml,275.43,198.78,S001,Local Vendor A,3303,641
+P0160,Lipstick 41,Cosmetics,Lipstick,ml,538.89,451.51,S001,Local Vendor A,3340,272
+P0161,Perfume 81,Cosmetics,Perfume,ml,288.55,181.07,S003,Distributor C,3322,718
+P0162,Eyeliner 80,Cosmetics,Eyeliner,ml,627.92,452.59,S003,Distributor C,3359,290
+P0163,Kurta 28,Clothing,Kurta,pcs,1289.61,1063.72,S001,Local Vendor A,6157,455
+P0164,Perfume 95,Cosmetics,Perfume,ml,292.08,188.17,S003,Distributor C,3372,669
+P0165,Saree 68,Clothing,Saree,pcs,517.45,437.61,S001,Local Vendor A,6136,389
+P0166,Eyeliner 45,Cosmetics,Eyeliner,ml,634.28,476.6,S003,Distributor C,3390,427
+P0167,Saree 80,Clothing,Saree,pcs,680.86,416.57,S003,Distributor C,6123,527
+P0168,Saree 77,Clothing,Saree,pcs,1229.91,789.25,S002,Wholesaler B,6137,462
+P0169,Lipstick 28,Cosmetics,Lipstick,ml,210.25,128.76,S002,Wholesaler B,3308,476
+P0170,Shampoo 80,Cosmetics,Shampoo,ml,198.66,126.13,S001,Local Vendor A,3332,598
+P0171,Lipstick 93,Cosmetics,Lipstick,ml,626.91,399.44,S001,Local Vendor A,3375,193
+P0172,Shampoo 28,Cosmetics,Shampoo,ml,326.86,202.85,S003,Distributor C,3306,264
+P0173,Eyeliner 95,Cosmetics,Eyeliner,ml,149.03,123.35,S001,Local Vendor A,3327,406
+P0174,Saree 83,Clothing,Saree,pcs,678.07,420.91,S003,Distributor C,6159,433
+P0175,Eyeliner 39,Cosmetics,Eyeliner,ml,197.89,150.62,S003,Distributor C,3301,455
+P0176,Saree 31,Clothing,Saree,pcs,1003.97,698.34,S002,Wholesaler B,6141,387
+P0177,T-shirt 33,Clothing,T-shirt,pcs,1091.91,827.13,S002,Wholesaler B,6188,240
+P0178,Saree 95,Clothing,Saree,pcs,874.72,554.1,S003,Distributor C,6134,539
+P0179,Shampoo 39,Cosmetics,Shampoo,ml,266.47,189.33,S003,Distributor C,3335,704
+P0180,Lipstick 30,Cosmetics,Lipstick,ml,275.35,224.21,S002,Wholesaler B,3325,486
+P0181,Kurta 36,Clothing,Kurta,pcs,582.27,379.07,S003,Distributor C,6162,461
+P0182,Shampoo 94,Cosmetics,Shampoo,ml,479.65,393.93,S002,Wholesaler B,3315,581
+P0183,Foundation 31,Cosmetics,Foundation,ml,378.0,231.84,S002,Wholesaler B,3331,219
+P0184,T-shirt 24,Clothing,T-shirt,pcs,332.25,247.18,S003,Distributor C,6148,327
+P0185,Perfume 67,Cosmetics,Perfume,ml,607.03,402.13,S003,Distributor C,3305,587
+P0186,Pants 64,Clothing,Pants,pcs,733.35,517.35,S003,Distributor C,6111,581
+P0187,Kurta 73,Clothing,Kurta,pcs,1021.84,684.64,S002,Wholesaler B,6124,663
+P0188,Shampoo 44,Cosmetics,Shampoo,ml,314.16,256.31,S001,Local Vendor A,3348,282
+P0189,Eyeliner 97,Cosmetics,Eyeliner,ml,304.72,213.92,S001,Local Vendor A,3307,642
+P0190,Eyeliner 8,Cosmetics,Eyeliner,ml,179.82,124.54,S001,Local Vendor A,3352,630
+P0191,Pants 98,Clothing,Pants,pcs,1010.07,621.98,S001,Local Vendor A,6125,697
+P0192,Shirt 42,Clothing,Shirt,pcs,815.06,554.85,S003,Distributor C,6182,689
+P0193,Shirt 100,Clothing,Shirt,pcs,470.68,398.09,S002,Wholesaler B,6187,430
+P0194,Pants 50,Clothing,Pants,pcs,949.76,665.11,S001,Local Vendor A,6162,376
+P0195,Lipstick 81,Cosmetics,Lipstick,ml,354.21,275.5,S003,Distributor C,3352,630
+P0196,Shampoo 44,Cosmetics,Shampoo,ml,234.27,147.3,S001,Local Vendor A,3338,587
+P0197,Kurta 58,Clothing,Kurta,pcs,496.35,342.38,S003,Distributor C,6118,503
+P0198,Saree 73,Clothing,Saree,pcs,676.87,522.97,S001,Local Vendor A,6170,596
+P0199,Saree 91,Clothing,Saree,pcs,339.48,213.25,S001,Local Vendor A,6142,515
+P0200,Shirt 13,Clothing,Shirt,pcs,1046.83,728.2,S002,Wholesaler B,6167,263

@@ -81,16 +81,37 @@ st.sidebar.header(STRINGS[lang]['upload_header'])
 
 def upload_and_cache(label, key):
     file = st.sidebar.file_uploader(label, type=["csv"], key=key)
+    file_path = f"Data/{key}.csv"
+    output_dir = "Output"
+    def clear_output_files():
+        if os.path.exists(output_dir):
+            for fname in os.listdir(output_dir):
+                fpath = os.path.join(output_dir, fname)
+                if os.path.isfile(fpath):
+                    try:
+                        os.remove(fpath)
+                    except Exception:
+                        pass
+
     if file:
         df = pd.read_csv(file)
         st.session_state[key + '_df'] = df
         # Save to Data/ for model scripts
         Path("Data").mkdir(exist_ok=True)
-        file_path = f"Data/{key}.csv"
         df.to_csv(file_path, index=False)
         st.session_state[key + '_path'] = file_path
         return df
-    return st.session_state.get(key + '_df', None)
+    else:
+        # If no file is uploaded, remove from session and delete from Data/
+        st.session_state[key + '_df'] = None
+        st.session_state[key + '_path'] = None
+        try:
+            if os.path.exists(file_path):
+                os.remove(file_path)
+        except Exception:
+            pass
+        clear_output_files()
+        return None
 
 products = upload_and_cache(STRINGS[lang]['products'] + " CSV", "products")
 sales = upload_and_cache(STRINGS[lang]['sales'] + " CSV", "sales")
