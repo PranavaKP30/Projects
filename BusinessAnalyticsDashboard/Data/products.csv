@@ -1,0 +1,151 @@
+product_id,product_name,category,subcategory,unit_of_measure,base_price_per_unit,cost_price_per_unit,supplier_id,supplier_name,hsn_code,shelf_life_days
+T0001,Toy Auto 60,Vehicles,Toy Auto,pcs,666.09,483.28,S102,ToyKart,9503,379
+T0002,Memory Cards 58,Games,Memory Cards,pcs,763.18,511.79,S102,ToyKart,9504,457
+T0003,Memory Cards 28,Games,Memory Cards,pcs,613.63,418.73,S101,DesiToys Ltd,9505,1077
+T0004,Stuffed Elephant 25,Dolls,Stuffed Elephant,pcs,611.45,453.04,S103,Western Imports,9504,894
+T0005,Mythological Hero 56,Action Figures,Mythological Hero,pcs,518.07,386.93,S103,Western Imports,9503,845
+T0006,Traditional Doll 15,Dolls,Traditional Doll,pcs,976.87,731.13,S101,DesiToys Ltd,9503,385
+T0007,Bullock Cart Toy 91,Vehicles,Bullock Cart Toy,pcs,753.05,489.03,S102,ToyKart,9503,1023
+T0008,Lattu 67,Wooden Toys,Lattu,pcs,698.5,423.72,S102,ToyKart,9504,1021
+T0009,Toy Auto 5,Vehicles,Toy Auto,pcs,256.81,162.5,S102,ToyKart,9503,800
+T0010,Kondapalli Toy 44,Wooden Toys,Kondapalli Toy,pcs,473.07,345.68,S101,DesiToys Ltd,9505,750
+T0011,Superhero 80,Action Figures,Superhero,pcs,1121.22,825.74,S101,DesiToys Ltd,9504,706
+T0012,Kondapalli Toy 49,Wooden Toys,Kondapalli Toy,pcs,380.37,233.5,S102,ToyKart,9505,779
+T0013,Traditional Doll 37,Dolls,Traditional Doll,pcs,395.93,320.68,S103,Western Imports,9504,926
+T0014,Kondapalli Toy 27,Wooden Toys,Kondapalli Toy,pcs,885.54,563.42,S101,DesiToys Ltd,9503,382
+T0015,Fabric Doll 28,Dolls,Fabric Doll,pcs,639.09,532.19,S103,Western Imports,9505,837
+T0016,Bullock Cart Toy 78,Vehicles,Bullock Cart Toy,pcs,980.19,800.73,S101,DesiToys Ltd,9504,844
+T0017,Wooden Train 7,Vehicles,Wooden Train,pcs,208.01,124.92,S101,DesiToys Ltd,9504,836
+T0018,Bullock Cart Toy 49,Vehicles,Bullock Cart Toy,pcs,844.28,527.37,S101,DesiToys Ltd,9503,422
+T0019,Superhero 100,Action Figures,Superhero,pcs,914.57,626.36,S101,DesiToys Ltd,9504,1064
+T0020,Toy Auto 51,Vehicles,Toy Auto,pcs,480.77,353.15,S102,ToyKart,9505,737
+T0021,Lattu 81,Wooden Toys,Lattu,pcs,501.51,337.14,S102,ToyKart,9504,1085
+T0022,Wooden Puzzle 46,Wooden Toys,Wooden Puzzle,pcs,555.76,359.79,S102,ToyKart,9503,544
+T0023,Wooden Train 67,Vehicles,Wooden Train,pcs,964.69,635.44,S101,DesiToys Ltd,9503,865
+T0024,Channapatna Doll 13,Wooden Toys,Channapatna Doll,pcs,647.84,423.75,S102,ToyKart,9504,1092
+T0025,Wooden Train 88,Vehicles,Wooden Train,pcs,529.59,331.18,S101,DesiToys Ltd,9504,559
+T0026,Mythological Hero 4,Action Figures,Mythological Hero,pcs,874.11,525.33,S103,Western Imports,9504,496
+T0027,Superhero 2,Action Figures,Superhero,pcs,370.69,279.33,S102,ToyKart,9505,810
+T0028,Stuffed Elephant 58,Dolls,Stuffed Elephant,pcs,718.76,454.0,S101,DesiToys Ltd,9503,1047
+T0029,Kondapalli Toy 49,Wooden Toys,Kondapalli Toy,pcs,261.8,168.67,S102,ToyKart,9505,827
+T0030,Mythological Hero 56,Action Figures,Mythological Hero,pcs,725.48,439.82,S102,ToyKart,9504,698
+T0031,Board Game 58,Games,Board Game,pcs,392.61,281.8,S102,ToyKart,9503,955
+T0032,Remote Car 88,Vehicles,Remote Car,pcs,563.13,421.86,S102,ToyKart,9504,668
+T0033,Mythological Hero 44,Action Figures,Mythological Hero,pcs,813.78,550.1,S103,Western Imports,9505,562
+T0034,Channapatna Doll 12,Wooden Toys,Channapatna Doll,pcs,1097.62,824.04,S101,DesiToys Ltd,9504,617
+T0035,Warrior Figurine 50,Action Figures,Warrior Figurine,pcs,353.75,244.57,S101,DesiToys Ltd,9505,774
+T0036,Lattu 28,Wooden Toys,Lattu,pcs,1074.57,779.92,S101,DesiToys Ltd,9503,536
+T0037,Spinning Top 88,Wooden Toys,Spinning Top,pcs,949.35,736.95,S102,ToyKart,9505,967
+T0038,Board Game 85,Games,Board Game,pcs,297.23,192.52,S102,ToyKart,9504,926
+T0039,Mythological Hero 68,Action Figures,Mythological Hero,pcs,1199.15,820.51,S101,DesiToys Ltd,9504,420
+T0040,Memory Cards 88,Games,Memory Cards,pcs,600.33,435.71,S101,DesiToys Ltd,9505,446
+T0041,Toy Auto 91,Vehicles,Toy Auto,pcs,704.59,591.44,S102,ToyKart,9505,681
+T0042,Toy Auto 83,Vehicles,Toy Auto,pcs,561.76,362.56,S102,ToyKart,9503,472
+T0043,Traditional Doll 59,Dolls,Traditional Doll,pcs,840.69,700.19,S102,ToyKart,9503,379
+T0044,Spinning Top 74,Wooden Toys,Spinning Top,pcs,772.13,559.11,S101,DesiToys Ltd,9505,594
+T0045,Superhero 28,Action Figures,Superhero,pcs,220.83,167.12,S101,DesiToys Ltd,9503,989
+T0046,Remote Car 82,Vehicles,Remote Car,pcs,730.86,517.09,S101,DesiToys Ltd,9504,554
+T0047,Remote Car 79,Vehicles,Remote Car,pcs,532.37,408.87,S103,Western Imports,9503,380
+T0048,Warrior Figurine 7,Action Figures,Warrior Figurine,pcs,752.37,486.37,S103,Western Imports,9503,499
+T0049,Board Game 89,Games,Board Game,pcs,1121.68,795.49,S101,DesiToys Ltd,9505,664
+T0050,Memory Cards 61,Games,Memory Cards,pcs,811.89,667.92,S102,ToyKart,9503,1085
+T0051,Wooden Train 98,Vehicles,Wooden Train,pcs,527.5,320.14,S103,Western Imports,9504,831
+T0052,Snake and Ladder 94,Games,Snake and Ladder,pcs,693.51,426.18,S102,ToyKart,9504,994
+T0053,Warrior Figurine 37,Action Figures,Warrior Figurine,pcs,785.31,620.47,S102,ToyKart,9504,423
+T0054,Board Game 25,Games,Board Game,pcs,734.87,465.86,S102,ToyKart,9503,555
+T0055,Spinning Top 80,Wooden Toys,Spinning Top,pcs,396.88,240.62,S101,DesiToys Ltd,9504,386
+T0056,Toy Auto 96,Vehicles,Toy Auto,pcs,374.4,291.84,S102,ToyKart,9503,662
+T0057,Channapatna Doll 67,Wooden Toys,Channapatna Doll,pcs,1075.25,808.33,S101,DesiToys Ltd,9505,685
+T0058,Toy Auto 51,Vehicles,Toy Auto,pcs,615.78,488.81,S101,DesiToys Ltd,9504,1036
+T0059,Memory Cards 16,Games,Memory Cards,pcs,746.98,625.0,S101,DesiToys Ltd,9504,844
+T0060,Traditional Doll 7,Dolls,Traditional Doll,pcs,1115.51,883.83,S102,ToyKart,9504,443
+T0061,Memory Cards 17,Games,Memory Cards,pcs,863.04,527.99,S101,DesiToys Ltd,9503,685
+T0062,Superhero 40,Action Figures,Superhero,pcs,957.18,650.24,S102,ToyKart,9503,603
+T0063,Barbie Doll 31,Dolls,Barbie Doll,pcs,869.6,562.3,S101,DesiToys Ltd,9505,694
+T0064,Lattu 56,Wooden Toys,Lattu,pcs,343.46,234.41,S102,ToyKart,9504,396
+T0065,Barbie Doll 78,Dolls,Barbie Doll,pcs,1063.69,826.24,S101,DesiToys Ltd,9505,612
+T0066,Traditional Doll 46,Dolls,Traditional Doll,pcs,214.04,134.83,S101,DesiToys Ltd,9503,702
+T0067,Bamboo Puzzle 60,Games,Bamboo Puzzle,pcs,421.09,315.5,S101,DesiToys Ltd,9503,457
+T0068,Channapatna Doll 29,Wooden Toys,Channapatna Doll,pcs,444.14,274.11,S102,ToyKart,9505,1065
+T0069,Toy Auto 100,Vehicles,Toy Auto,pcs,893.67,557.47,S103,Western Imports,9505,1075
+T0070,Bullock Cart Toy 14,Vehicles,Bullock Cart Toy,pcs,457.71,305.08,S101,DesiToys Ltd,9504,502
+T0071,Fabric Doll 18,Dolls,Fabric Doll,pcs,1007.41,739.65,S101,DesiToys Ltd,9505,605
+T0072,Mythological Hero 49,Action Figures,Mythological Hero,pcs,1057.0,801.8,S102,ToyKart,9504,409
+T0073,Traditional Doll 48,Dolls,Traditional Doll,pcs,473.63,328.68,S102,ToyKart,9504,723
+T0074,Warrior Figurine 25,Action Figures,Warrior Figurine,pcs,1012.99,824.68,S101,DesiToys Ltd,9505,639
+T0075,Warrior Figurine 80,Action Figures,Warrior Figurine,pcs,1193.03,740.27,S102,ToyKart,9505,914
+T0076,Snake and Ladder 13,Games,Snake and Ladder,pcs,331.05,265.98,S101,DesiToys Ltd,9503,384
+T0077,Channapatna Doll 78,Wooden Toys,Channapatna Doll,pcs,615.87,505.96,S102,ToyKart,9503,572
+T0078,Toy Auto 57,Vehicles,Toy Auto,pcs,387.09,296.64,S102,ToyKart,9505,590
+T0079,Spinning Top 9,Wooden Toys,Spinning Top,pcs,1016.66,626.52,S102,ToyKart,9504,406
+T0080,Barbie Doll 13,Dolls,Barbie Doll,pcs,643.94,476.03,S102,ToyKart,9505,598
+T0081,Memory Cards 45,Games,Memory Cards,pcs,1040.91,839.73,S102,ToyKart,9504,576
+T0082,Memory Cards 69,Games,Memory Cards,pcs,651.52,530.45,S102,ToyKart,9504,970
+T0083,Board Game 82,Games,Board Game,pcs,977.7,658.92,S101,DesiToys Ltd,9503,498
+T0084,Fabric Doll 29,Dolls,Fabric Doll,pcs,583.13,374.31,S102,ToyKart,9505,910
+T0085,Superhero 32,Action Figures,Superhero,pcs,234.78,193.78,S103,Western Imports,9503,517
+T0086,Remote Car 78,Vehicles,Remote Car,pcs,685.0,481.28,S103,Western Imports,9503,671
+T0087,Mythological Hero 35,Action Figures,Mythological Hero,pcs,616.41,386.43,S101,DesiToys Ltd,9503,1018
+T0088,Stuffed Elephant 78,Dolls,Stuffed Elephant,pcs,392.36,274.27,S103,Western Imports,9503,894
+T0089,Kondapalli Toy 47,Wooden Toys,Kondapalli Toy,pcs,356.27,216.91,S101,DesiToys Ltd,9504,509
+T0090,Bamboo Puzzle 53,Games,Bamboo Puzzle,pcs,556.37,472.32,S101,DesiToys Ltd,9505,682
+T0091,Board Game 88,Games,Board Game,pcs,404.36,275.51,S102,ToyKart,9504,799
+T0092,Bullock Cart Toy 28,Vehicles,Bullock Cart Toy,pcs,300.29,217.18,S102,ToyKart,9504,599
+T0093,Snake and Ladder 72,Games,Snake and Ladder,pcs,770.39,523.82,S101,DesiToys Ltd,9503,689
+T0094,Lattu 30,Wooden Toys,Lattu,pcs,468.08,342.95,S101,DesiToys Ltd,9505,1071
+T0095,Barbie Doll 96,Dolls,Barbie Doll,pcs,1103.86,720.53,S101,DesiToys Ltd,9504,883
+T0096,Traditional Doll 97,Dolls,Traditional Doll,pcs,328.29,261.08,S102,ToyKart,9505,841
+T0097,Wooden Puzzle 47,Wooden Toys,Wooden Puzzle,pcs,434.36,364.78,S102,ToyKart,9503,748
+T0098,Superhero 31,Action Figures,Superhero,pcs,265.03,159.43,S101,DesiToys Ltd,9503,645
+T0099,Bullock Cart Toy 38,Vehicles,Bullock Cart Toy,pcs,729.12,570.73,S102,ToyKart,9503,642
+T0100,Warrior Figurine 83,Action Figures,Warrior Figurine,pcs,626.8,472.67,S101,DesiToys Ltd,9504,654
+T0101,Stuffed Elephant 28,Dolls,Stuffed Elephant,pcs,348.64,280.64,S101,DesiToys Ltd,9503,580
+T0102,Toy Auto 31,Vehicles,Toy Auto,pcs,841.53,670.79,S102,ToyKart,9505,879
+T0103,Barbie Doll 59,Dolls,Barbie Doll,pcs,434.51,363.73,S102,ToyKart,9503,836
+T0104,Superhero 84,Action Figures,Superhero,pcs,578.67,398.03,S103,Western Imports,9503,602
+T0105,Traditional Doll 58,Dolls,Traditional Doll,pcs,662.67,419.61,S101,DesiToys Ltd,9504,1062
+T0106,Superhero 32,Action Figures,Superhero,pcs,326.13,251.75,S103,Western Imports,9503,812
+T0107,Wooden Puzzle 57,Wooden Toys,Wooden Puzzle,pcs,539.77,450.42,S102,ToyKart,9503,807
+T0108,Spinning Top 40,Wooden Toys,Spinning Top,pcs,636.66,432.88,S101,DesiToys Ltd,9505,586
+T0109,Memory Cards 29,Games,Memory Cards,pcs,347.76,262.82,S101,DesiToys Ltd,9504,641
+T0110,Barbie Doll 93,Dolls,Barbie Doll,pcs,1165.33,825.97,S102,ToyKart,9505,679
+T0111,Lattu 17,Wooden Toys,Lattu,pcs,737.04,453.41,S102,ToyKart,9505,791
+T0112,Stuffed Elephant 96,Dolls,Stuffed Elephant,pcs,805.07,618.76,S102,ToyKart,9503,1012
+T0113,Bullock Cart Toy 6,Vehicles,Bullock Cart Toy,pcs,321.16,207.96,S103,Western Imports,9505,461
+T0114,Superhero 82,Action Figures,Superhero,pcs,1115.43,696.41,S101,DesiToys Ltd,9504,697
+T0115,Bullock Cart Toy 63,Vehicles,Bullock Cart Toy,pcs,852.26,598.6,S103,Western Imports,9503,1012
+T0116,Warrior Figurine 19,Action Figures,Warrior Figurine,pcs,673.54,411.01,S101,DesiToys Ltd,9504,847
+T0117,Barbie Doll 59,Dolls,Barbie Doll,pcs,248.19,209.07,S101,DesiToys Ltd,9504,547
+T0118,Stuffed Elephant 94,Dolls,Stuffed Elephant,pcs,615.51,513.99,S103,Western Imports,9505,398
+T0119,Bamboo Puzzle 32,Games,Bamboo Puzzle,pcs,321.0,250.26,S102,ToyKart,9504,409
+T0120,Snake and Ladder 46,Games,Snake and Ladder,pcs,1109.67,873.33,S102,ToyKart,9503,518
+T0121,Remote Car 75,Vehicles,Remote Car,pcs,810.18,592.24,S101,DesiToys Ltd,9504,540
+T0122,Channapatna Doll 96,Wooden Toys,Channapatna Doll,pcs,1147.9,753.22,S101,DesiToys Ltd,9504,894
+T0123,Bamboo Puzzle 62,Games,Bamboo Puzzle,pcs,573.22,449.19,S101,DesiToys Ltd,9505,504
+T0124,Channapatna Doll 15,Wooden Toys,Channapatna Doll,pcs,366.15,277.45,S101,DesiToys Ltd,9504,1056
+T0125,Superhero 56,Action Figures,Superhero,pcs,275.91,211.25,S103,Western Imports,9505,382
+T0126,Board Game 30,Games,Board Game,pcs,526.88,435.29,S102,ToyKart,9504,755
+T0127,Warrior Figurine 25,Action Figures,Warrior Figurine,pcs,750.68,470.68,S103,Western Imports,9505,875
+T0128,Board Game 35,Games,Board Game,pcs,644.28,406.62,S101,DesiToys Ltd,9505,611
+T0129,Fabric Doll 88,Dolls,Fabric Doll,pcs,320.22,204.63,S101,DesiToys Ltd,9503,764
+T0130,Memory Cards 46,Games,Memory Cards,pcs,576.16,422.46,S101,DesiToys Ltd,9505,553
+T0131,Snake and Ladder 99,Games,Snake and Ladder,pcs,228.82,145.88,S102,ToyKart,9503,450
+T0132,Bullock Cart Toy 88,Vehicles,Bullock Cart Toy,pcs,722.35,525.29,S103,Western Imports,9504,519
+T0133,Spinning Top 52,Wooden Toys,Spinning Top,pcs,388.2,240.8,S102,ToyKart,9505,455
+T0134,Bamboo Puzzle 31,Games,Bamboo Puzzle,pcs,488.79,300.02,S101,DesiToys Ltd,9505,989
+T0135,Spinning Top 5,Wooden Toys,Spinning Top,pcs,475.67,361.63,S102,ToyKart,9503,617
+T0136,Bullock Cart Toy 39,Vehicles,Bullock Cart Toy,pcs,1170.02,825.01,S101,DesiToys Ltd,9504,1025
+T0137,Traditional Doll 70,Dolls,Traditional Doll,pcs,451.75,360.8,S101,DesiToys Ltd,9503,745
+T0138,Warrior Figurine 45,Action Figures,Warrior Figurine,pcs,430.18,302.47,S101,DesiToys Ltd,9505,486
+T0139,Board Game 5,Games,Board Game,pcs,968.68,639.06,S102,ToyKart,9503,673
+T0140,Warrior Figurine 95,Action Figures,Warrior Figurine,pcs,424.64,353.69,S102,ToyKart,9504,954
+T0141,Toy Auto 9,Vehicles,Toy Auto,pcs,455.86,332.86,S103,Western Imports,9505,1068
+T0142,Warrior Figurine 81,Action Figures,Warrior Figurine,pcs,246.79,188.08,S102,ToyKart,9503,824
+T0143,Board Game 43,Games,Board Game,pcs,801.73,646.6,S101,DesiToys Ltd,9504,471
+T0144,Board Game 2,Games,Board Game,pcs,222.89,145.7,S102,ToyKart,9504,623
+T0145,Bamboo Puzzle 66,Games,Bamboo Puzzle,pcs,697.74,592.16,S102,ToyKart,9503,870
+T0146,Warrior Figurine 28,Action Figures,Warrior Figurine,pcs,960.05,711.83,S103,Western Imports,9505,606
+T0147,Toy Auto 21,Vehicles,Toy Auto,pcs,1091.9,869.68,S101,DesiToys Ltd,9505,796
+T0148,Mythological Hero 83,Action Figures,Mythological Hero,pcs,1074.3,879.18,S102,ToyKart,9504,833
+T0149,Mythological Hero 81,Action Figures,Mythological Hero,pcs,670.58,500.28,S101,DesiToys Ltd,9504,432
+T0150,Remote Car 51,Vehicles,Remote Car,pcs,595.2,468.87,S101,DesiToys Ltd,9504,568
